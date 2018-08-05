@@ -1,11 +1,29 @@
+.main-content {
+  margin-top: 60px;
+  min-height: calc(100vh - 60px); }
+
 .home {
-  height: 100vh;
-  background: #ddd;
-  background: #e43a15;
-  background: -webkit-linear-gradient(to right, #e65245, #e43a15);
-  background: linear-gradient(to right, #e65245, #e43a15); }
+  height: calc(100vh - 60px); }
+  .home__content {
+    position: relative;
+    top: 40%;
+    transform: translateY(-40%);
+    max-width: 800px;
+    margin: 0 auto; }
 
 .navigation {
+  height: 60px;
   position: fixed;
   left: 0px;
-  right: 0px; }
+  right: 0px;
+  top: 0px; }
+  .navigation__left, .navigation__right {
+    display: inline-block; }
+  .navigation__right {
+    float: right; }
+  .navigation__link {
+    line-height: 20px;
+    padding: 20px 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff !important; }

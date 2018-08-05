@@ -1,2 +1,9 @@
 body {
-  font-size: 16px; }
+  font-size: 16px;
+  color: #fff;
+  background: #e43a15;
+  background: -webkit-linear-gradient(to right, #e65245, #e43a15);
+  background: linear-gradient(to right, #e65245, #e43a15); }
+
+.centered {
+  text-align: center; }

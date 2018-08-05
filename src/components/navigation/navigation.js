@@ -1,8 +1,38 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 const Navigation = (props) => (
 	<div className="navigation">
-		<span>xxx</span>
+		
+		<div className="navigation__left">
+			<Router>
+				<Link 
+					to="/" 
+					className="navigation__link"
+				>
+					<span>ShaneRandolph</span>
+				</Link>
+			</Router>
+		</div>
+		<div className="navigation__right">
+			<Router>
+				<Link 
+					to="/"
+					className="navigation__link"
+				>
+					<span>Contact</span>
+				</Link>
+			</Router>
+
+			<Router>
+				<Link 
+					to="/"
+					className="navigation__link"
+				>
+					<span>Resumé/CV</span>
+				</Link>
+			</Router>
+		</div>
 	</div>
 );
 

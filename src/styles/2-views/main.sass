@@ -1,11 +1,31 @@
+@import "../0-vars/layout.sass"
+
+.main-content
+	margin-top: $navigation-height
+	min-height: calc(100vh - 60px)
+
 .home
-	height: 100vh
-	background: #ddd
-	background: #e43a15
-	background: -webkit-linear-gradient(to right, #e65245, #e43a15)
-	background: linear-gradient(to right, #e65245, #e43a15)
+	height: calc(100vh - 60px)
+	&__content
+		position: relative
+		top: 40%
+		transform: translateY(-40%)
+		max-width: 800px
+		margin: 0 auto
 
 .navigation
+	height: $navigation-height
 	position: fixed
 	left: 0px
 	right: 0px
+	top: 0px
+	&__left, &__right
+		display: inline-block
+	&__right
+		float: right
+	&__link
+		line-height: 20px
+		padding: ($navigation-height - 20px * 2) 20px
+		display: inline-block
+		text-decoration: none
+		color: #fff !important

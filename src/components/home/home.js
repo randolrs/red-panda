@@ -2,7 +2,9 @@ import React from 'react';
 
 const Home = (props) => (
 	<div className="home">
-		<span>xxx</span>
+		<div className="home__content centered">
+			<span>xxx</span>
+		</div>
 	</div>
 );
 

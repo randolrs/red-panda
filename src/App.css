@@ -1,33 +1,39 @@
 body {
-  font-size: 16px; }
-
-.home {
-  height: 100vh;
-  background: #ddd;
+  font-size: 16px;
+  color: #fff;
   background: #e43a15;
   background: -webkit-linear-gradient(to right, #e65245, #e43a15);
   background: linear-gradient(to right, #e65245, #e43a15); }
 
-.navigation {
-  position: fixed;
-  left: 0px;
-  right: 0px; }
-
-.App {
+.centered {
   text-align: center; }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px; }
+.main-content {
+  margin-top: 60px;
+  min-height: calc(100vh - 60px); }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white; }
+.home {
+  height: calc(100vh - 60px); }
+  .home__content {
+    position: relative;
+    top: 40%;
+    transform: translateY(-40%);
+    max-width: 800px;
+    margin: 0 auto; }
 
-.App-title {
-  font-size: 1.5em; }
-
-.App-intro {
-  font-size: large; }
+.navigation {
+  height: 60px;
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  top: 0px; }
+  .navigation__left, .navigation__right {
+    display: inline-block; }
+  .navigation__right {
+    float: right; }
+  .navigation__link {
+    line-height: 20px;
+    padding: 20px 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff !important; }
