@@ -12,6 +12,32 @@
 		transform: translateY(-40%)
 		max-width: 800px
 		margin: 0 auto
+		padding: 20px
+		&__header
+			font-size: 48px
+			margin: 0
+			color: #212121
+			font-weight: 700
+		&__img
+			display: inline-block
+			width: 100px
+			height: 100px
+			background: brown
+			border-radius: 50%
+			border: 2px solid #fff
+.about
+	background: #0d47a1
+	color: #fff
+	&__content
+    	margin: 0 auto
+    	max-width: 1000px
+    	padding: 100px 50px
+    	&__header
+    		font-size: 28px
+    		margin: 0
+    	p
+    		font-size: 18px
+    		font-weight: 300
 
 .navigation
 	height: $navigation-height
@@ -28,4 +54,11 @@
 		padding: ($navigation-height - 20px * 2) 20px
 		display: inline-block
 		text-decoration: none
-		color: #fff !important
+		&--button
+			line-height: 20px
+			padding: (($navigation-height - 20px * 2) - 12px) 20px
+			margin: 12px
+			display: inline-block
+			text-decoration: none
+			border-radius: 20px
+			border: 2px solid #eee

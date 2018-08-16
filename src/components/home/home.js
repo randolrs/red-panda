@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { Component}  from 'react';
+import Hero from './partials/hero'
+import About from './partials/about'
 
-const Home = (props) => (
-	<div className="home">
-		<div className="home__content centered">
-			<span>xxx</span>
+class Home extends Component {    
+  
+  render() {
+    return (
+      	<div>
+			<Hero></Hero>
+			<About></About>
 		</div>
-	</div>
-);
+    );
+  }
+}
 
 export default Home;

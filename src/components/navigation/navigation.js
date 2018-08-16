@@ -18,7 +18,7 @@ const Navigation = (props) => (
 			<Router>
 				<Link 
 					to="/"
-					className="navigation__link"
+					className="navigation__link--button"
 				>
 					<span>Contact</span>
 				</Link>
@@ -27,7 +27,7 @@ const Navigation = (props) => (
 			<Router>
 				<Link 
 					to="/"
-					className="navigation__link"
+					className="navigation__link--button"
 				>
 					<span>Resumé/CV</span>
 				</Link>
