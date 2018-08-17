@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,600,700");
 body {
   font-size: 16px;
   color: #424242;
-  background: #fff; }
+  background: #fff;
+  font-family: 'Nunito', sans-serif; }
 
 .centered {
   text-align: center; }
