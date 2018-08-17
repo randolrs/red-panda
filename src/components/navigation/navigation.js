@@ -1,36 +1,30 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Navigation = (props) => (
 	<div className="navigation">
 		<div className="navigation__left">
-			<Router>
-				<Link 
-					to="/" 
-					className="navigation__link--logo"
-				>
-					<img src="/logo.svg" />
-				</Link>
-			</Router>
+			<Link 
+				to="/" 
+				className="navigation__link--logo"
+			>
+				<img src="/logo.svg" alt="Shane Randolph" />
+			</Link>
 		</div>
 		<div className="navigation__right">
-			<Router>
-				<Link 
-					to="/"
-					className="navigation__link--button"
-				>
-					<span>Contact</span>
-				</Link>
-			</Router>
+			<Link 
+				to="/contact"
+				className="navigation__link--button"
+			>
+				<span>Contact</span>
+			</Link>
 
-			<Router>
-				<Link 
-					to="/"
-					className="navigation__link--button"
-				>
-					<span>Resumé/CV</span>
-				</Link>
-			</Router>
+			<Link 
+				to="/resume"
+				className="navigation__link--button"
+			>
+				<span>Resumé/CV</span>
+			</Link>
 		</div>
 	</div>
 );

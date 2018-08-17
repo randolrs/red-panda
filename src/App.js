@@ -1,45 +1,31 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { 
+  BrowserRouter as Router,
+  Route,
+  Switch
+} from "react-router-dom";
+
 import Home from './components/home/home'
+import Resume from './components/resume/resume'
+import Contact from './components/contact/contact'
 import Navigation from './components/navigation/navigation'
 import Footer from './components/footer/footer'
 import './App.css';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Navigation></Navigation>
-        <div className="main-content">
-          <Router>
-            <Route exact path="/" component={Home} />
-          </Router>
-        </div>
-        <Footer></Footer>
+const App = () => (
+  <Router>
+    <div className="App">
+      <Navigation></Navigation>
+      <div className="main-content">
+        <Switch>
+          <Route path="/resume" component={Resume} />
+          <Route path="/contact" component={Contact} />
+          <Route exact path="/" component={Home} />
+        </Switch>
       </div>
-    );
-  }
-}
-
-const routes = [
-  // {
-  //   path: "/sandwiches",
-  //   component: Sandwiches
-  // },
-  // {
-  //   path: "/tacos",
-  //   component: Tacos,
-  //   routes: [
-  //     {
-  //       path: "/tacos/bus",
-  //       component: Bus
-  //     },
-  //     {
-  //       path: "/tacos/cart",
-  //       component: Cart
-  //     }
-  //   ]
-  // }
-];
+      <Footer></Footer>
+    </div>
+  </Router>
+)
 
 export default App;
