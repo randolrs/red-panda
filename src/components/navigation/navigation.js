@@ -8,9 +8,9 @@ const Navigation = (props) => (
 			<Router>
 				<Link 
 					to="/" 
-					className="navigation__link"
+					className="navigation__link--logo"
 				>
-					<span>ShaneRandolph</span>
+					<img src="/logo.svg" />
 				</Link>
 			</Router>
 		</div>

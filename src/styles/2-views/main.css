@@ -46,6 +46,8 @@
   top: 0px; }
   .navigation__left, .navigation__right {
     display: inline-block; }
+  .navigation__left {
+    padding: 5px; }
   .navigation__right {
     float: right; }
   .navigation__link {
@@ -60,4 +62,5 @@
       display: inline-block;
       text-decoration: none;
       border-radius: 20px;
-      border: 2px solid #eee; }
+      background: #1684B8;
+      color: #fff; }
