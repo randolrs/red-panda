@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 const Navigation = (props) => (
 	<div className="navigation">
-		
 		<div className="navigation__left">
 			<Router>
 				<Link 
