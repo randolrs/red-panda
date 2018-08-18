@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Hero = (props) => (
-	<div className="home">
+	<section className="home">
 		<div className="home__content centered">
 			<h2 className="home__content__header">
 				<span>Front-end Developer</span>
@@ -14,7 +14,7 @@ const Hero = (props) => (
 				<span>Twitter,etc.</span>
 			</div>
 		</div>
-	</div>
+	</section>
 );
 
 export default Hero;

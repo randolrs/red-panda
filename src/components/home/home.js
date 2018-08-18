@@ -1,6 +1,7 @@
 import React, { Component}  from 'react';
 import Hero from './partials/hero'
 import About from './partials/about'
+import Skills from './partials/skills'
 
 class Home extends Component {    
   
@@ -9,6 +10,7 @@ class Home extends Component {
       	<div>
 			<Hero></Hero>
 			<About></About>
+			<Skills></Skills>
 		</div>
     );
   }

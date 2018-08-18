@@ -25,6 +25,12 @@ const Navigation = (props) => (
 			>
 				<span>Resumé/CV</span>
 			</Link>
+			<Link 
+				to="/projects"
+				className="navigation__link--button"
+			>
+				<span>Projects</span>
+			</Link>
 		</div>
 	</div>
 );

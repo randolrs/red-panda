@@ -1,11 +1,11 @@
 import React from 'react';
 
 const About = (props) => (
-	<div className="about centered">
-		<div className="about__content">
-			<h3 className="about__content__header">
+	<section className="home-section centered about">
+		<div className="home-section__content">
+			<header className="home-section__content__header">
 				<span>Hello, I'm Shane. Happy you're here</span>
-			</h3>
+			</header>
 			<p>
 				<span>Since beginning my career 7 years ago, I've worked with ....</span>
 			</p>
@@ -18,7 +18,7 @@ const About = (props) => (
 				<span>CTAs</span>
 			</div>
 		</div>
-	</div>
+	</section>
 );
 
 export default About;

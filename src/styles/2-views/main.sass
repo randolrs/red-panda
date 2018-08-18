@@ -4,6 +4,11 @@
 	margin-top: $navigation-height
 	min-height: calc(100vh - 60px)
 
+.content
+	max-width: 1200px
+	margin: 0 auto
+	padding: 50px
+
 .home
 	height: calc(100vh - 60px)
 	&__content
@@ -33,21 +38,22 @@
 			border-radius: 50%
 			border: 2px solid #fff
 			box-shadow: rgba(58,78,96,0.2) 0 12px 42px
+.home-section
+	&__content
+		margin: 0 auto
+		max-width: 1000px
+		padding: 100px 50px
+		&__header
+			font-size: 36px
+			margin-bottom: 20px;
+		p
+			font-size: 24px
+			font-weight: 300
 .about
 	color: #fff
 	background: #EB3349
 	background: -webkit-linear-gradient(to right, #F45C43, #EB3349)
 	background: linear-gradient(to right, #F45C43, #EB3349)
-	&__content
-    	margin: 0 auto
-    	max-width: 1000px
-    	padding: 100px 50px
-    	&__header
-    		font-size: 36px
-    		margin-bottom: 20px;
-    	p
-    		font-size: 24px
-    		font-weight: 300
 
 .navigation
 	height: $navigation-height
