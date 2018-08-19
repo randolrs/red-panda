@@ -36,6 +36,14 @@ const Footer = (props) => (
 				<span>Tokenly?</span>
 			</div>
 			<div>
+				<span>Built with</span>
+				<span className="heart-beat" style={{color: '#EB3349', fontSize: '22px'}}> ♥ </span>
+				<span>love and</span>
+				<img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="Shane Randolph" />
+				<span>ReactJS</span>
+
+			</div>
+			<div>
 				<span>©</span>
 				<span>{ thisYear }, </span>
 				<span>Shane Randolph</span>

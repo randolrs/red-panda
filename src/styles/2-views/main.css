@@ -89,4 +89,10 @@
   .footer__content {
     display: inline-block;
     max-width: 1200px;
-    padding: 50px 30px; }
+    width: 100%;
+    padding: 50px 30px;
+    line-height: 30px; }
+    .footer__content img {
+      display: inline-block;
+      height: 30px;
+      vertical-align: middle; }
