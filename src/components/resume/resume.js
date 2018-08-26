@@ -1,5 +1,5 @@
 import React, { Component}  from 'react';
-import ResumeData from './data/resume';
+import ResumeData from '../../data/resume';
 
 class Resume extends Component {    
 	render() {

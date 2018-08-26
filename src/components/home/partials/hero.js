@@ -9,7 +9,7 @@ const Hero = (props) => (
 			<h3 className="home__content__sub-header">
 				<span>I design and code beautiful, user-centric web experiences.</span>
 			</h3>
-			<div className="home__content__img"></div>
+			<img src="/Shane.png" className="home__content__img"/>
 			<div className="home__content__social">
 				<span>Twitter,etc.</span>
 			</div>
