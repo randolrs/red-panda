@@ -6,7 +6,7 @@
 	min-height: calc(100vh - 60px)
 
 .content
-	max-width: 1200px
+	max-width: 1000px
 	margin: 0 auto
 	padding: 50px
 	&__main-cta
@@ -16,6 +16,7 @@
 		border: 1px solid rgba(0,0,0,0.2)
 		display: inline-block
 		box-shadow: 0px 2px 5px rgba(0,0,0,0.2)
+		font-size: 18px
 .page-header
 	padding: 30px
 	padding-top: $navigation-height + 30px
@@ -31,6 +32,7 @@
 		display: block
 	h1
 		font-size: 48px
+		text-shadow: 0px 2px 5px rgba(0,0,0,0.1)
 	h2
 		font-weight: 500
 		margin-bottom: 30px
@@ -147,12 +149,15 @@
 .footer
   background: #424242
   color: #fff
+  position: relative
   &__content
-      display: inline-block
-      max-width: 1200px
+      display: block
+      max-width: 1000px
       width: 100%
       padding: 50px 30px
       line-height: 30px
+      position: relative
+      margin: 0 auto
       img
       	display: inline-block
       	height: 30px

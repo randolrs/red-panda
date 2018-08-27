@@ -23,8 +23,9 @@ class Navigation extends Component {
 	};
 
 	handleScroll = (event) => {
+		let navTransitionHeight = 60;
 		let scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
-		if(scrollTop > 100) {
+		if(scrollTop > navTransitionHeight) {
 			this.props.makeNavWhite();
 		} else {
 			this.props.makeNavClear();
