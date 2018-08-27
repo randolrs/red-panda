@@ -90,7 +90,8 @@ a {
     text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); }
   .page-header h2 {
     font-weight: 500;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    font-size: 20px; }
 
 .home {
   height: calc(100vh);
@@ -161,6 +162,8 @@ a {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
     .navigation.white .navigation__link--button {
       background: #1565C0; }
+    .navigation.white span.title {
+      color: #424242; }
   .navigation__left, .navigation__right {
     display: inline-block; }
   .navigation__left {
@@ -187,20 +190,24 @@ a {
       transition: 0.2s;
       background: rgba(255, 255, 255, 0.2);
       text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
-      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2); }
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+      letter-spacing: -0.5px; }
       .navigation__link--button:hover {
         background: rgba(255, 255, 255, 0.2);
         text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2); }
-    .navigation__link--logo img, .navigation__link--logo span {
-      display: inline-block;
-      vertical-align: middle; }
-    .navigation__link--logo span.title {
-      font-size: 22px;
-      font-weight: 700;
-      margin-left: 10px; }
-    .navigation__link--logo img {
-      width: 40px; }
+    .navigation__link--logo {
+      display: inline-block; }
+      .navigation__link--logo img, .navigation__link--logo span {
+        display: inline-block;
+        vertical-align: middle; }
+      .navigation__link--logo span.title {
+        font-size: 22px;
+        font-weight: 700;
+        margin-left: 10px;
+        letter-spacing: -0.5px; }
+      .navigation__link--logo img {
+        width: 40px; }
 
 .footer {
   background: #424242;
@@ -218,3 +225,28 @@ a {
       display: inline-block;
       height: 30px;
       vertical-align: middle; }
+
+@media (max-width: 900px) {
+  .home__content__img {
+    width: 150px;
+    height: 150px; }
+  .page-header__content h1 {
+    font-size: 36px; }
+  .page-header__content h2 {
+    font-size: 20px; }
+  .navigation__link--button {
+    font-size: 16px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 12px;
+    padding-right: 12px; }
+  .navigation__link--logo span.title {
+    font-size: 18px; } }
+
+@media (max-width: 600px) {
+  .navigation__link--logo {
+    padding: 8px 0px; }
+    .navigation__link--logo img {
+      display: none; }
+    .navigation__link--logo span.title {
+      margin-left: 0px; } }

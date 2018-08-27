@@ -13,13 +13,14 @@ class Resume extends Component {
 			);
 		});
 		let resumeGoogleDocsLink = 'https://drive.google.com/file/d/1BdNGmUMf6u81FuullmebrL0x_E3xFlmz/view?usp=sharing'; 
+		let resumeTLDR = 'Front-end software developer. 7 years of experience. Currently the lead front-end developer for a digital-native currency (i.e. Bitcoin) eCommerce company.';
     	return (
     		<div>
     			<div className="page-header centered">
     				<div className="page-header__content centered">	
 	    				<img src="/Shane.png" className="home__content__img"/>
 	    				<h1><span>My Resume</span></h1>
-	    				<h2><span>TLDR: I am a front-end developer that has shipped clean, high performance, well-tested code for 7 years</span></h2>
+	    				<h2><span>TLDR: {resumeTLDR}</span></h2>
 	    				<div>
 		    				<a
 								href={resumeGoogleDocsLink}
