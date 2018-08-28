@@ -11,7 +11,6 @@ class Navigation extends Component {
 
 	constructor(props) {
 		super(props);
-		this.listener = _.throttle(this.handleScroll, 200).bind(this);
 	};
 
 	componentDidMount = () => {

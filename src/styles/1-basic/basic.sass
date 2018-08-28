@@ -4,9 +4,10 @@ body
 	background: #fff
 	font-family: 'Nunito', sans-serif;
 
-h1, h2, h3, h4, h5, h6, h7, p, div, span
+h1, h2, h3, h4, h5, h6, h7, p, div, span, ul, li
 	margin: 0
 	box-sizing: border-box
+	padding: 0px
 
 .centered
 	text-align: center
@@ -23,3 +24,21 @@ a
 	margin-bottom: 15px
 	&:last-child
 		margin-bottom: 0px
+	&__header
+		display: flex
+	&__title
+		margin-bottom: 10px
+		display: inline-block
+		width: 100%
+		flex: 1
+	&__upper-right
+		display: block
+		flex: 1
+		text-align: right
+	&__summary
+		font-weight: 600
+		color: #424242
+		margin-bottom: 5px
+	&__description
+		color: #616161
+	
