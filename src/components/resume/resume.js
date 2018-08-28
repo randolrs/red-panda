@@ -9,6 +9,11 @@ class Resume extends Component {
 					<div class="card resume-entry">
 						<div class="resume-entry__image">
 							<img src={resumeEntry.img_src} />
+							{resumeEntry.moreDetails &&
+								<div>
+									<span class="button__grey">More Details</span>
+								</div>
+							}
 						</div>
 						<div class="resume-entry__data">
 							<div class="card__header">
@@ -45,6 +50,11 @@ class Resume extends Component {
 					<div class="card resume-entry">
 						<div class="resume-entry__image">
 							<img src={resumeEntry.img_src} />
+							{resumeEntry.moreDetails &&
+								<div>
+									<span class="button__grey">More Details</span>
+								</div>
+							}
 						</div>
 						<div class="resume-entry__data">
 							<div class="card__header">
@@ -80,6 +90,11 @@ class Resume extends Component {
 					<div class="card resume-entry">
 						<div class="resume-entry__image">
 							<img src={resumeEntry.img_src} />
+							{resumeEntry.moreDetails &&
+								<div>
+									<span class="button__grey">More Details</span>
+								</div>
+							}
 						</div>
 						<div class="resume-entry__data">
 							<div class="card__header">

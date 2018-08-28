@@ -14,7 +14,8 @@ const ResumeData = [
     ],
     img_src: '/tokenly-logo.png',
     id: 'tokenly',
-    type: 'work'
+    type: 'work',
+    moreDetails: true
   },
   {
     company: "ArtYam",
@@ -27,7 +28,8 @@ const ResumeData = [
     ],
     img_src: '/artyam-logo.png',
     id: 'artyam',
-    type: 'work'
+    type: 'work',
+    moreDetails: true
   },
   {
     company: "Shane Randolph, LLC",
@@ -42,7 +44,8 @@ const ResumeData = [
     ],
     img_src: 'http://treehouse-code-samples.s3.amazonaws.com/bootstrap-4/img/angie.png',
     id: 'shane',
-    type: 'work'
+    type: 'work',
+    moreDetails: true
   },
   {
     company: "Ernst & Young, LLP (EY)",
@@ -56,7 +59,8 @@ const ResumeData = [
     ],
     img_src: '/ey-logo.png',
     id: 'ernstyoung',
-    type: 'work'
+    type: 'work',
+    moreDetails: false
   },
   {
     company: "MergedFolding (Folding@Home)",
@@ -70,7 +74,8 @@ const ResumeData = [
     ],
     img_src: '/FLDC-logo.png',
     id: 'fldc',
-    type: 'community'
+    type: 'community',
+    moreDetails: true
   },
   {
     company: "Advidor to Blockchain OSU",
@@ -84,7 +89,8 @@ const ResumeData = [
     ],
     img_src: '/osu-logo.png',
     id: 'osu',
-    type: 'community'
+    type: 'community',
+    moreDetails: false
   },
   {
     company: "Miami University (Oxford, Ohio)",
@@ -97,7 +103,8 @@ const ResumeData = [
     ],
     img_src: '/mu-logo.png',
     id: 'muohio',
-    type: 'edu'
+    type: 'edu',
+    moreDetails: false
   },
 ];
 
