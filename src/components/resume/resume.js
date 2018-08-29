@@ -1,126 +1,28 @@
 import React, { Component}  from 'react';
 import ResumeData from '../../data/resume';
+import ResumeEntry from './resume-entry';
 
 class Resume extends Component {    
 	render() {
 		let workList = ResumeData.map((resumeEntry) => {
 			if(resumeEntry.type == 'work') {
-				return (
-					<div class="card resume-entry">
-						<div class="resume-entry__image">
-							<img src={resumeEntry.img_src} />
-							{resumeEntry.moreDetails &&
-								<div>
-									<span class="button__grey">More Details</span>
-								</div>
-							}
-						</div>
-						<div class="resume-entry__data">
-							<div class="card__header">
-								<div className="card__title">
-									<span className="resume-entry__data__company">{resumeEntry.company}</span><br />
-									<a
-										className="resume-entry__data__company-link"
-										href={resumeEntry.company_url}
-										target="_blank"
-									>{resumeEntry.company_url_label}</a>
-								</div>
-								<div className="card__upper-right">
-									<span class="resume-entry__data__dates">{resumeEntry.datesLabel}</span><br/>
-									<span class="resume-entry__data__dates-description">{resumeEntry.datesLabelDescription}</span>
-								</div>
-							</div>
-							<div className="card__summary">
-								<span>{resumeEntry.summary}</span>
-							</div>
-							<ul>
-								{resumeEntry.bulletPoints.map(function(bulletPoint, index){
-									return <li key={ index }>{bulletPoint}</li>;
-								})}
-							</ul>
-						</div>
-					</div>
+				return(
+					<ResumeEntry resumeEntry={resumeEntry} key={resumeEntry.id}></ResumeEntry>
 				);
-			}
+			};
 		});
 
 		let eduList = ResumeData.map((resumeEntry) => {
 			if(resumeEntry.type == 'edu') {
-				return (
-					<div class="card resume-entry">
-						<div class="resume-entry__image">
-							<img src={resumeEntry.img_src} />
-							{resumeEntry.moreDetails &&
-								<div>
-									<span class="button__grey">More Details</span>
-								</div>
-							}
-						</div>
-						<div class="resume-entry__data">
-							<div class="card__header">
-								<div className="card__title">
-									<span className="resume-entry__data__company">{resumeEntry.company}</span><br />
-									<a
-										className="resume-entry__data__company-link"
-										href={resumeEntry.company_url}
-										target="_blank"
-									>{resumeEntry.company_url_label}</a>
-								</div>
-								<div className="card__upper-right">
-									<span class="resume-entry__data__dates">{resumeEntry.datesLabel}</span><br/>
-									<span class="resume-entry__data__dates-description">{resumeEntry.datesLabelDescription}</span>
-								</div>
-							</div>
-							<div className="card__summary">
-								<span>{resumeEntry.summary}</span>
-							</div>
-							<ul>
-								{resumeEntry.bulletPoints.map(function(bulletPoint, index){
-									return <li key={ index }>{bulletPoint}</li>;
-								})}
-							</ul>
-						</div>
-					</div>
+				return(
+					<ResumeEntry resumeEntry={resumeEntry} key={resumeEntry.id}></ResumeEntry>
 				);
-			}
+			};
 		});
 		let communityList = ResumeData.map((resumeEntry) => {
 			if(resumeEntry.type == 'community') {
-				return (
-					<div class="card resume-entry">
-						<div class="resume-entry__image">
-							<img src={resumeEntry.img_src} />
-							{resumeEntry.moreDetails &&
-								<div>
-									<span class="button__grey">More Details</span>
-								</div>
-							}
-						</div>
-						<div class="resume-entry__data">
-							<div class="card__header">
-								<div className="card__title">
-									<span className="resume-entry__data__company">{resumeEntry.company}</span><br />
-									<a
-										className="resume-entry__data__company-link"
-										href={resumeEntry.company_url}
-										target="_blank"
-									>{resumeEntry.company_url_label}</a>
-								</div>
-								<div className="card__upper-right">
-									<span class="resume-entry__data__dates">{resumeEntry.datesLabel}</span><br/>
-									<span class="resume-entry__data__dates-description">{resumeEntry.datesLabelDescription}</span>
-								</div>
-							</div>
-							<div className="card__summary">
-								<span>{resumeEntry.summary}</span>
-							</div>
-							<ul>
-								{resumeEntry.bulletPoints.map(function(bulletPoint, index){
-									return <li key={ index }>{bulletPoint}</li>;
-								})}
-							</ul>
-						</div>
-					</div>
+				return(
+					<ResumeEntry resumeEntry={resumeEntry} key={resumeEntry.id}></ResumeEntry>
 				);
 			}
 		});
@@ -146,15 +48,15 @@ class Resume extends Component {
     			</div>
 				<div className="content">
 					<section>
-						<h2 class="centered">Professional Experience</h2>
+						<h2 className="centered">Professional Experience</h2>
 						{workList}
 					</section>
 					<section>
-						<h2 class="centered">Community</h2>
+						<h2 className="centered">Community</h2>
 						{communityList}
 					</section>
 					<section>
-						<h2 class="centered">Education</h2>
+						<h2 className="centered">Education</h2>
 						{eduList}
 					</section>
 

@@ -1,21 +1,33 @@
 import React, { Component}  from 'react';
-import ResumeData from '../../data/resume';
+import ProjectData from '../../data/projects';
+import Project from './project';
 
-class Project extends Component {    
+class Projects extends Component {    
 	render() {
+		let projects = ProjectData.map((project) => {
+			return(
+				<Project project={project} key={project.id}></Project>
+			);
+		});
     	return (
-			<div className="content">
-				<h1><span>Projects</span></h1>
-				<h2><span>TLDR: I've worked on ... </span></h2>
-				<div>
-				</div>
-
-				<div>
-					<span>Project CTA</span>
+			<div>
+				<div className="page-header centered">
+    				<div className="page-header__content centered">	
+	    				<img src="/Shane.png" className="home__content__img"/>
+	    				<h1><span>Recent Projects</span></h1>
+	    				<div>
+						</div>
+					</div>
+    			</div>
+    			<div className="content">
+					<section>
+						<h2 className="centered">Recent Projects</h2>
+						{projects}
+					</section>
 				</div>
 			</div>
 		)
     }
 }
 
-export default Project;
+export default Projects;

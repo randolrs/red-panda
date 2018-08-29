@@ -40,7 +40,7 @@ class Navigation extends Component {
 						className="navigation__link--logo"
 					>
 						<img src="/logo.svg" alt="Shane Randolph" />
-						<span class="title">Shane Randolph</span>
+						<span className="title">Shane Randolph</span>
 					</Link>
 				</div>
 				<div className="navigation__right">
