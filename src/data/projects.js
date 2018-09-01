@@ -3,10 +3,11 @@ const ProjectsData = [
     name: "TokenMarkets",
     url: 'https://TokenMarkets.com',
     url_label: 'TokenMarkets.com',
-    summary: 'Angie is a web developer and teacher who is passionate about building scalable, data driven web apps, especially ones that address old problems with new tech!',
-    img_src: 'http://treehouse-code-samples.s3.amazonaws.com/bootstrap-4/img/angie.png',
+    summary: 'Think: Shopify with native support for cryptocurrency and tokens.',
+    img_src: '/tm-logo.png',
     id: 'tokenMarkets',
     bulletPoints: [
+     'I developed most of the existing front-end and many of the REST APIs.'
     ],
     moreDetails: true
   },
@@ -14,10 +15,11 @@ const ProjectsData = [
     name: "TokenFM",
     url: 'https://Token.fm',
     url_label: 'TokenFM.com',
-    summary: 'Angie is a web developer and teacher who is passionate about building scalable, data driven web apps, especially ones that address old problems with new tech!',
-    img_src: 'http://treehouse-code-samples.s3.amazonaws.com/bootstrap-4/img/angie.png',
+    summary: 'Think: Spotify with blockchain token-based licensing and access control.',
+    img_src: '/tokenfm-logo.png',
     id: 'tokenFM',
     bulletPoints: [
+        'Single page application; I developed most of the existing front-end.'
     ],
     moreDetails: true
   },
@@ -25,10 +27,11 @@ const ProjectsData = [
     name: "Folding @ Home",
     url: 'https://FoldingAtHome.org',
     url_label: 'FoldingAtHome.org',
-    summary: 'Angie is a web developer and teacher who is passionate about building scalable, data driven web apps, especially ones that address old problems with new tech!',
-    img_src: 'http://treehouse-code-samples.s3.amazonaws.com/bootstrap-4/img/angie.png',
+    summary: 'A service that enables users to distribute blockchain tokens to Folding@Home participants in order to support medical research',
+    img_src: '/FLDC-logo.png',
     id: 'foldingAtHome',
     bulletPoints: [
+        'I designed, coded, and shipped a front-end update for the landing page, blockchain token distribution process, and dashboard.'
     ],
     moreDetails: true
   },

@@ -31,7 +31,8 @@
   background: -webkit-linear-gradient(to right, #0D47A1, #00796B);
   background: linear-gradient(to right, #0D47A1, #00796B);
   color: #fff;
-  position: relative; }
+  position: relative;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3); }
   .page-header__content {
     max-width: 800px;
     margin: 0 auto;
@@ -172,7 +173,8 @@
     padding: 50px 30px;
     line-height: 30px;
     position: relative;
-    margin: 0 auto; }
+    margin: 0 auto;
+    font-size: 18px; }
     .footer__content img {
       display: inline-block;
       height: 30px;
@@ -200,7 +202,8 @@
       font-size: 20px;
       color: #212121; }
     .resume-entry__data__company-link {
-      font-weight: 500; }
+      font-weight: 500;
+      color: #616161; }
   .resume-entry ul {
     padding-left: 30px;
     color: #616161; }
@@ -209,6 +212,12 @@
       margin-bottom: 3px; }
 
 @media (max-width: 900px) {
+  .page-header {
+    margin-bottom: 20px; }
+  .content {
+    padding: 20px; }
+    .content section h2 {
+      font-size: 24px; }
   .home__content__img {
     width: 150px;
     height: 150px; }
