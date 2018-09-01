@@ -26,7 +26,7 @@ class Resume extends Component {
 				);
 			}
 		});
-		let resumeGoogleDocsLink = 'https://drive.google.com/file/d/1BdNGmUMf6u81FuullmebrL0x_E3xFlmz/view?usp=sharing'; 
+		let resumeGoogleDocsLink = 'https://drive.google.com/file/d/1zUTA7xhxrsJMhp6ce2ydCCFepIK9gSyJ/view?usp=sharing'; 
 		let resumeTLDR = 'Front-end software developer. 7 years of experience. Currently the lead front-end developer for a digital-native currency (i.e. Bitcoin) eCommerce company.';
     	return (
     		<div>
