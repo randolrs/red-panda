@@ -25,7 +25,7 @@ class Projects extends Component {
 						{projects}
 					</section>
 					<div>
-						<div class="content__read-more-cta centered">
+						<div className="content__read-more-cta centered">
 							<span>Interested in my resumé/work history?</span>
 							<br />
 							<Link 

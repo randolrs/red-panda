@@ -62,14 +62,14 @@ class Resume extends Component {
 					</section>
 
 					<div>
-						<div class="content__read-more-cta centered">
+						<div className="content__read-more-cta centered">
 							<span>Interested in some of the recent projects I've worked on?</span>
 							<br />
 							<Link 
 								to="/projects"
 								className="content__read-more-cta__button"
 							>
-								<span>Checkout my recent projects</span>
+								<span>Check out my recent projects</span>
 							</Link>
 						</div>
 					</div>
