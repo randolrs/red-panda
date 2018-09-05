@@ -23,10 +23,24 @@
       font-size: 30px;
       margin-bottom: 15px;
       color: #212121; }
+  .content__read-more-cta {
+    padding: 25px;
+    border-radius: 3px;
+    background: #E1F5FE;
+    border: 1px solid #81D4FA;
+    font-size: 18px; }
+    .content__read-more-cta__button {
+      background: #424242;
+      border-radius: 3px;
+      padding: 10px 25px;
+      color: #fff;
+      display: inline-block;
+      margin-top: 15px; }
 
 .page-header {
   padding: 30px;
-  padding-top: 90px;
+  padding-top: 120px;
+  padding-bottom: 90px;
   background: #1565C0;
   background: -webkit-linear-gradient(to right, #0D47A1, #00796B);
   background: linear-gradient(to right, #0D47A1, #00796B);
@@ -38,12 +52,15 @@
     margin: 0 auto;
     position: relative;
     display: block; }
+    .page-header__content__cta-container {
+      margin-top: 25px; }
   .page-header h1 {
     font-size: 48px;
-    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); }
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px; }
   .page-header h2 {
     font-weight: 500;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
     font-size: 20px; }
 
 .home {
@@ -188,7 +205,8 @@
     width: 170px;
     text-align: center; }
     .resume-entry__image img {
-      max-width: 100%; }
+      max-width: 100%;
+      border-radius: 2px; }
   .resume-entry__data {
     padding: 15px;
     width: 100%; }
@@ -203,7 +221,7 @@
       color: #212121; }
     .resume-entry__data__company-link {
       font-weight: 500;
-      color: #616161; }
+      color: #0277BD; }
   .resume-entry ul {
     padding-left: 30px;
     color: #616161; }
@@ -213,7 +231,9 @@
 
 @media (max-width: 900px) {
   .page-header {
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    padding-top: 90px;
+    padding-bottom: 60px; }
   .content {
     padding: 20px; }
     .content section h2 {

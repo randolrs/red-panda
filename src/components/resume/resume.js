@@ -1,6 +1,7 @@
 import React, { Component}  from 'react';
 import ResumeData from '../../data/resume';
 import ResumeEntry from './resume-entry';
+import { Link } from "react-router-dom";
 
 class Resume extends Component {    
 	render() {
@@ -34,8 +35,8 @@ class Resume extends Component {
     				<div className="page-header__content centered">	
 	    				<img src="/Shane.png" className="home__content__img"/>
 	    				<h1><span>My Resume</span></h1>
-	    				<h2><span>TLDR: {resumeTLDR}</span></h2>
-	    				<div>
+	    				<h2><span>Synopsis: {resumeTLDR}</span></h2>
+	    				<div class="page-header__content__cta-container">
 		    				<a
 								href={resumeGoogleDocsLink}
 								target="_blank"
@@ -61,7 +62,16 @@ class Resume extends Component {
 					</section>
 
 					<div>
-						<span>Projects CTA</span>
+						<div class="content__read-more-cta centered">
+							<span>Interested in some of the recent projects I've worked on?</span>
+							<br />
+							<Link 
+								to="/projects"
+								className="content__read-more-cta__button"
+							>
+								<span>Checkout my recent projects</span>
+							</Link>
+						</div>
 					</div>
 				</div>
 			</div>
