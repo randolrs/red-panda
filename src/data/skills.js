@@ -1,17 +1,33 @@
 const SkillsData = [
   {
-    skillName: "ReactJS",
+    name: "ReactJS",
     skillUrl: 'https://reactjs.org/',
-    description: 'Angie is a web developer and teacher who is passionate about building scalable, data driven web apps, especially ones that address old problems with new tech!',
     img_src: 'http://treehouse-code-samples.s3.amazonaws.com/bootstrap-4/img/angie.png',
-    id: 'tokenly'
+    id: 'reactjs'
   },
   {
-    skillName: "ReactJS",
+    name: "VueJS",
     skillUrl: 'https://reactjs.org/',
-    description: 'Angie is a web developer and teacher who is passionate about building scalable, data driven web apps, especially ones that address old problems with new tech!',
     img_src: 'http://treehouse-code-samples.s3.amazonaws.com/bootstrap-4/img/angie.png',
-    id: 'tokenly'
+    id: 'vuejs'
+  },
+  {
+    name: "Node.JS",
+    skillUrl: 'https://reactjs.org/',
+    img_src: 'http://treehouse-code-samples.s3.amazonaws.com/bootstrap-4/img/angie.png',
+    id: 'nodejs'
+  },
+  {
+    name: "PHP",
+    skillUrl: 'https://reactjs.org/',
+    img_src: 'http://treehouse-code-samples.s3.amazonaws.com/bootstrap-4/img/angie.png',
+    id: 'php'
+  },
+  {
+    name: "Javascript",
+    skillUrl: 'https://reactjs.org/',
+    img_src: 'http://treehouse-code-samples.s3.amazonaws.com/bootstrap-4/img/angie.png',
+    id: 'nodejs'
   },
 ];
 
