@@ -10,7 +10,12 @@ class Skill extends Component {
 		return (
     		<div className="skill-container">
     			<div className="skill-container__content">
-    				{skill.name}
+	    			<div className="front">
+	    				{skill.name}
+	    			</div>
+    				<div className="back">
+	    				{skill.description}
+	    			</div>
     			</div>
     		</div>
 		)
