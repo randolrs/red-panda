@@ -13,8 +13,8 @@ class Skills extends Component {
 			<section className="home-section">
 				<div className="home-section__content centered">
 					<header className="home-section__content__header"><span>Skills</span></header>
-					<p>
-						<span>... modern Javascript ... </span>
+					<p className="home-section__content__header--secondary">
+						<span>I work primarily with modern Javascript libraries as well as back-end language for the purposes of creating REST APIs.</span>
 					</p>
 					<div class="flex-container">
 						{skills}
