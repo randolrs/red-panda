@@ -8,10 +8,13 @@ class Skill extends Component {
 	render() {
 		let skill = this.props.skill;
 		return (
-    		<div className="skill-container">
+    		<div className="skill-container centered">
     			<div className="skill-container__content">
 	    			<div className="front">
-	    				{skill.name}
+	    				<div className="skill-container__content__img-container">
+	    					<img src={skill.img_src}></img>
+	    				</div>
+	    				<span>{skill.name}</span>
 	    			</div>
     				<div className="back">
 	    				{skill.description}

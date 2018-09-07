@@ -254,18 +254,24 @@
 		background: #fff
 		border-radius: 3px
 		border: 1px solid #e0e0e0
+		box-shadow: 0px 1px 5px rgba(0,0,0,0.1)
 		height: 100%
 		width: 100%
-
-.skill-container 
-	perspective: 1000px;
+		position: relative
+		&__img-container
+			height: 150px
+			padding: 10px
+			img
+				max-height: 100%
+				max-width: 100%
+				border-radius: 2px
 
 .skill-container:hover .skill-container__content, .skill-container.hover .skill-container__content
 	transform: rotateY(180deg);
 
-.skill-container, .front, .back
-	width: 320px
-	height: 480px
+.front, .back
+	width: 100%
+	height: 100%
 
 /* flip speed goes here */
 .skill-container__content 
