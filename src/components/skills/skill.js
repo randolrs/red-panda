@@ -7,6 +7,11 @@ class Skill extends Component {
 	};
 	render() {
 		let skill = this.props.skill;
+		if(skill.name.length > 12) {
+			var smallClass = 'small';
+		} else {
+			var smallClass = '';
+		}
 		return (
     		<div className="skill-container centered">
     			<div className="skill-container__content">
@@ -14,7 +19,7 @@ class Skill extends Component {
 	    				<div className="skill-container__content__img-container">
 	    					<img src={skill.img_src}></img>
 	    				</div>
-	    				<span>{skill.name}</span>
+	    				<span className={"skill-container__content__title " + smallClass}>{skill.name}</span>
 	    			</div>
     				<div className="back">
 	    				{skill.description}

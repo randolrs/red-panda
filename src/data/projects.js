@@ -11,7 +11,8 @@ const ProjectsData = [
          'I developed most of the existing front-end and many of the REST APIs.',
          'Developed high-usability user interfaces for innovative blockchain applications and technologies including: instant payment detection, token-based discounts, and token delivery.'
         ],
-        moreDetails: true
+        moreDetails: true,
+        current: true
     },
     {
         name: "TokenFM",
@@ -25,7 +26,8 @@ const ProjectsData = [
             'Developed entire front-end for single page media streaming application.',
             'Designed and developed user interface for first-of-its-kind, token-controlled access chat channels.'
         ],
-        moreDetails: true
+        moreDetails: true,
+        current: true
     },
     {
         name: "Folding @ Home",
@@ -38,7 +40,8 @@ const ProjectsData = [
         bulletPoints: [
             'I designed, coded, and shipped a front-end update for the landing page, blockchain token distribution process, and dashboard.'
         ],
-        moreDetails: true
+        moreDetails: true,
+        current: false
     },
     {
         name: "ThatHQ",
@@ -53,7 +56,8 @@ const ProjectsData = [
             'Book recommendations cover skills essential to growing any business, from idea generation and product design to sales and copywriting.',
             'I personally read all the books that thatHQ recommends.'
         ],
-        moreDetails: true
+        moreDetails: true,
+        current: false
     }
 ];
 

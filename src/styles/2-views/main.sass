@@ -116,15 +116,32 @@
 			font-size: 42px
 			margin-bottom: 20px
 			font-weight: 700
+			color: #212121
+			&--secondary
+				margin-bottom: 30px
+				color: #757575
+				font-size: 20px
 		p
 			font-size: 24px
 			font-weight: 300
+		section
+			margin-bottom: 40px
+			&:last-child
+				margin-bottom: 0px
+			header
+				font-size: 30px
+				margin-bottom: 15px
+				font-weight: 700
 
-.about
+.red-background
 	color: #fff
 	background: #EB3349
 	background: -webkit-linear-gradient(to right, #F45C43, #EB3349)
 	background: linear-gradient(to right, #F45C43, #EB3349)
+	.home-section__content__header
+		color: #fff
+		&--secondary
+			color: #fff
 
 .navigation
 	height: $navigation-height
@@ -190,7 +207,7 @@
 			img
 				width: 40px
 .footer
-	background: #424242
+	background: #212121
 	color: #fff
 	position: relative
 	&__content
@@ -225,6 +242,7 @@
 	&__data
 		padding: 15px
 		width: 100%
+		text-align: left
 		&__dates
 			font-weight: 700
 		&__dates-description
@@ -259,12 +277,21 @@
 		width: 100%
 		position: relative
 		&__img-container
-			height: 150px
+			height: 120px
 			padding: 10px
 			img
 				max-height: 100%
 				max-width: 100%
 				border-radius: 2px
+		&__title
+			font-weight: 700
+			font-size: 18px
+			color: #212121
+			margin-top: 15px
+			display: inline-block
+			&.small
+				letter-spacing: -0.5px
+				font-size: 16px
 
 .skill-container:hover .skill-container__content, .skill-container.hover .skill-container__content
 	transform: rotateY(180deg);

@@ -15,7 +15,8 @@ const ResumeData = [
     img_src: '/tokenly-logo.png',
     id: 'tokenly',
     type: 'work',
-    moreDetails: true
+    moreDetails: true,
+    current: true
   },
   {
     company: "ArtYam",
@@ -29,10 +30,11 @@ const ResumeData = [
     img_src: '/artyam-logo.png',
     id: 'artyam',
     type: 'work',
-    moreDetails: true
+    moreDetails: true,
+    current: false
   },
   {
-    company: "Shane Randolph, LLC",
+    company: "Denser Alloys, LLC",
     company_url: 'https://ShaneRandolph.com',
     company_url_label: 'ShaneRandolph.com',
     datesLabel: 'April 2014 - July 2017',
@@ -45,7 +47,8 @@ const ResumeData = [
     img_src: 'http://treehouse-code-samples.s3.amazonaws.com/bootstrap-4/img/angie.png',
     id: 'shane',
     type: 'work',
-    moreDetails: true
+    moreDetails: true,
+    current: false
   },
   {
     company: "Ernst & Young, LLP (EY)",
@@ -60,7 +63,8 @@ const ResumeData = [
     img_src: '/ey-logo.png',
     id: 'ernstyoung',
     type: 'work',
-    moreDetails: false
+    moreDetails: false,
+    current: false
   },
   {
     company: "MergedFolding (Folding@Home)",
@@ -75,7 +79,8 @@ const ResumeData = [
     img_src: '/FLDC-logo.png',
     id: 'fldc',
     type: 'community',
-    moreDetails: true
+    moreDetails: true,
+    current: false
   },
   {
     company: "Advidor to Blockchain OSU",
@@ -83,14 +88,15 @@ const ResumeData = [
     company_url_label: 'OSU.edu',
     datesLabel: '2017, 2018',
     datesLabelDescription: '',
-    summary: 'I am an advisor for a student organization at Ohio State University.',
+    summary: 'I am an advisor to a student organization at Ohio State University.',
     bulletPoints: [
       'I participate in their intermittent panel discussions and give feedback on some of their written proposals.'
     ],
     img_src: '/osu-logo.png',
     id: 'osu',
     type: 'community',
-    moreDetails: false
+    moreDetails: false,
+    current: false
   },
   {
     company: "Miami University (Oxford, Ohio)",
@@ -104,7 +110,8 @@ const ResumeData = [
     img_src: '/mu-logo.png',
     id: 'muohio',
     type: 'edu',
-    moreDetails: false
+    moreDetails: false,
+    current: false
   },
 ];
 
