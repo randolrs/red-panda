@@ -4,7 +4,9 @@ const About = (props) => (
 	<section className="home-section centered about">
 		<div className="home-section__content">
 			<header className="home-section__content__header">
-				<span>Hello, I'm Shane. Happy you're here</span>
+				<span>Hello, I'm </span>
+				<span className="name-color-text">Shane</span><span>. </span>
+				<span>Happy you're here</span>
 			</header>
 
 			<h4>How can I help you today?</h4>

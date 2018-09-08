@@ -8,6 +8,7 @@ class Hero extends Component {
 		let socialLinks = SocialLinksData.map((socialLink) => {
 			return(
 				<a
+					className="social-link"
 					href={socialLink.url}
 					key={socialLink.id}
 					target="_blank"
@@ -19,7 +20,9 @@ class Hero extends Component {
 			<section className="home">
 				<div className="home__content centered">
 					<h2 className="home__content__header">
-						<span>Front-end Developer</span>
+						<span>Hi! I'm </span>
+						<span>Shane</span>
+						<span>, a front-end developer in the Bay Area.</span>
 					</h2>
 					<h3 className="home__content__sub-header">
 						<span>I design and code beautiful, user-centric web experiences.</span>

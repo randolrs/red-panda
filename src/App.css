@@ -175,7 +175,7 @@ a {
     padding: 20px;
     color: #fff; }
     .home__content__header {
-      font-size: 60px;
+      font-size: 48px;
       margin: 0px;
       color: #fff;
       text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
@@ -199,7 +199,10 @@ a {
       font-size: 18px;
       margin-top: 15px; }
       .home__content__social a {
-        padding: 10px;
+        border-radius: 30px;
+        background: rgba(255, 255, 255, 0.2);
+        margin: 10px;
+        padding: 10px 30px;
         display: inline-block; }
 
 .home-section__content {
@@ -242,6 +245,15 @@ a {
     color: #fff; }
     .red-background .home-section__content__header--secondary {
       color: #fff; }
+
+.name-color-text {
+  color: #EB3349; }
+
+.social-link {
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 10px;
+  padding: 10px 30px; }
 
 .navigation {
   height: 60px;
@@ -286,12 +298,11 @@ a {
       font-weight: 600;
       font-size: 18px;
       transition: 0.2s;
-      background: rgba(255, 255, 255, 0.2);
+      background: #EF6C00;
       text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
       box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
       letter-spacing: -0.5px; }
       .navigation__link--button:hover {
-        background: rgba(255, 255, 255, 0.2);
         text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2); }
     .navigation__link--logo {
@@ -466,7 +477,7 @@ a {
   .home__content {
     padding: 10px; }
     .home__content__header {
-      font-size: 48px; }
+      font-size: 40px; }
     .home__content__sub-header {
       font-size: 24px; }
     .home__content__img {
@@ -494,12 +505,33 @@ a {
       display: block; }
       .headline-content__entry__header {
         height: auto;
-        font-size: 28px; } }
+        font-size: 28px; }
+  .home-section__content {
+    padding: 100px 25px; }
+    .home-section__content__header {
+      font-size: 40px; } }
 
 @media (max-width: 600px) {
+  .navigation__link--button {
+    font-size: 14px;
+    margin-left: 3px;
+    margin-right: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px; }
   .navigation__link--logo {
     padding: 8px 0px; }
     .navigation__link--logo img {
       display: none; }
     .navigation__link--logo span.title {
-      margin-left: 0px; } }
+      margin-left: 0px;
+      font-size: 16px; }
+  .home__content__header {
+    font-size: 36px; }
+  .home-section__content {
+    padding: 100px 15px; }
+    .home-section__content__header {
+      font-size: 32px; } }

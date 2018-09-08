@@ -14,7 +14,7 @@ class Skills extends Component {
 				<div className="home-section__content centered">
 					<header className="home-section__content__header"><span>Skills</span></header>
 					<p className="home-section__content__header--secondary">
-						<span>I work primarily with modern Javascript libraries as well as back-end language for the purposes of creating REST APIs.</span>
+						<span>I work primarily with component-based Javascript libraries as well as back-end languages for the purposes of creating REST APIs.</span>
 					</p>
 					<div class="flex-container">
 						{skills}
