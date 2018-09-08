@@ -172,8 +172,15 @@ a {
     transform: translateY(-40%);
     max-width: 1000px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 20px 50px;
     color: #fff; }
+    .home__content__hero-container {
+      display: flex; }
+      .home__content__hero-container__image {
+        width: 150px; }
+      .home__content__hero-container__headline {
+        flex: 1;
+        padding-left: 20px; }
     .home__content__header {
       font-size: 48px;
       margin: 0px;
@@ -271,7 +278,8 @@ a {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
     .navigation.white .navigation__link--button {
-      background: #1565C0; }
+      color: #212121;
+      text-shadow: none; }
     .navigation.white span.title {
       color: #424242; }
   .navigation__left, .navigation__right {
@@ -291,20 +299,15 @@ a {
       margin: 12px;
       display: inline-block;
       text-decoration: none;
-      border-radius: 20px;
-      background: #1684B8;
       background: rgba(0, 0, 0, 0);
       color: #fff;
       font-weight: 600;
       font-size: 18px;
       transition: 0.2s;
-      background: #EF6C00;
       text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
-      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
       letter-spacing: -0.5px; }
-      .navigation__link--button:hover {
-        text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2); }
+      .navigation__link--button.active {
+        border-bottom: 3px solid #EF6C00; }
     .navigation__link--logo {
       display: inline-block; }
       .navigation__link--logo img, .navigation__link--logo span {

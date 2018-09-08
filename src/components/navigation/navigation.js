@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import _ from 'lodash';
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 class Navigation extends Component {
 	static propTypes = {
@@ -44,25 +44,35 @@ class Navigation extends Component {
 					</Link>
 				</div>
 				<div className="navigation__right">
-					<Link 
+					<NavLink 
+						to="/"
+						className="navigation__link--button"
+						activeClassName="active"
+					>
+						<span>Home</span>
+					</NavLink>
+					<NavLink 
 						to="/contact"
 						className="navigation__link--button"
+						activeClassName="active"
 					>
 						<span>Contact Me</span>
-					</Link>
+					</NavLink>
 
-					<Link 
+					<NavLink 
 						to="/resume"
 						className="navigation__link--button"
+						activeClassName="active"
 					>
 						<span>Resumé/CV</span>
-					</Link>
-					<Link 
+					</NavLink>
+					<NavLink 
 						to="/projects"
 						className="navigation__link--button"
+						activeClassName="active"
 					>
 						<span>Recent Projects</span>
-					</Link>
+					</NavLink>
 				</div>
 			</div>
 		)
