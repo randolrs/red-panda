@@ -107,6 +107,7 @@
 			a
 				padding: 10px
 				display: inline-block
+
 .home-section
 	&__content
 		margin: 0 auto
@@ -132,6 +133,12 @@
 				font-size: 30px
 				margin-bottom: 15px
 				font-weight: 700
+		&__outlined
+			padding: 25px
+			border: 2px solid #fff
+			border-radius: 3px
+			background: #212121
+			box-shadow: 0px 1px 10px rgba(0,0,0,0.25)
 
 .red-background
 	color: #fff
@@ -245,6 +252,7 @@
 		text-align: left
 		&__dates
 			font-weight: 700
+			color: #212121
 		&__dates-description
 			font-weight: 500
 			color: #616161
@@ -276,6 +284,7 @@
 		height: 100%
 		width: 100%
 		position: relative
+		cursor: pointer
 		&__img-container
 			height: 120px
 			padding: 10px
@@ -299,6 +308,12 @@
 .front, .back
 	width: 100%
 	height: 100%
+
+.back
+	display: table
+	&__content
+		display: table-cell
+		vertical-align: middle
 
 /* flip speed goes here */
 .skill-container__content 
@@ -324,6 +339,28 @@
 .back
 	transform: rotateY(180deg)
 
+.headline
+	&-container
+		border-top: 1px solid #e0e0e0
+		border-bottom: 1px solid #e0e0e0
+		box-shadow: 0px 1px 5px rgba(0,0,0,0.1)
+	&-content
+		display: flex
+		max-width: 1000px
+		margin: 0 auto
+		&__entry
+			flex: 1
+			padding: 25px
+			&__header
+				font-size: 32px
+				height: 70px
+				margin-bottom: 20px
+				color: #EF6C00
+				font-weight: 700
+			&__description
+				font-size: 16px
+				color: #757575
+				text-align: justify
 
 
 @media(max-width: 900px)
@@ -336,9 +373,15 @@
 		section
 			h2
 				font-size: 24px
-	.home__content__img
-		width: 150px
-		height: 150px
+	.home__content
+		padding: 10px
+		&__header
+			font-size: 48px
+		&__sub-header
+			font-size: 24px
+		&__img
+			width: 150px
+			height: 150px
 	.page-header__content
 		h1
 			font-size: 36px
@@ -354,6 +397,18 @@
 		&--logo
 			span.title
 				font-size: 18px
+	.headline
+		&-container
+			border-bottom: none
+			box-shadow: none
+		&-content
+			display: block
+			&__entry
+				flex: auto
+				display: block
+				&__header
+					height: auto
+					font-size: 28px
 @media(max-width: 600px)
 	.navigation__link
 		&--logo

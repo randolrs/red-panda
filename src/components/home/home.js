@@ -3,6 +3,7 @@ import Hero from './partials/hero'
 import About from './partials/about'
 import Skills from './partials/skills'
 import Current from './partials/current'
+import Headlines from './partials/headlines'
 
 class Home extends Component {    
   
@@ -10,6 +11,7 @@ class Home extends Component {
     return (
       	<div>
 			<Hero></Hero>
+			<Headlines></Headlines>
 			<About></About>
 			<Current></Current>
 			<Skills></Skills>

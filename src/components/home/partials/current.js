@@ -32,13 +32,13 @@ class Current extends Component {
 					<p className="home-section__content__header--secondary">
 						<span>I am currently the lead front-end developer for a digital-native currency (e.g. Bitcoin) company. I am creating responsive, usable front-ends for the next generation of blockchain and cryptocurrency applications.</span>
 					</p>
-					<section>
-						<header>Work</header>
+					<section className="home-section__content__outlined">
+						<header>Current Role</header>
 						{ currentWork }
 					</section>
 
-					<section>
-						<header>Projects</header>
+					<section className="home-section__content__outlined">
+						<header>Current Projects</header>
 						{ currentProjects }
 					</section>
 				</div>

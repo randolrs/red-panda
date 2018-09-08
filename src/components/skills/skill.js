@@ -22,7 +22,9 @@ class Skill extends Component {
 	    				<span className={"skill-container__content__title " + smallClass}>{skill.name}</span>
 	    			</div>
     				<div className="back">
-	    				{skill.description}
+    					<div className="back__content">
+	    					<span>{skill.description}</span>
+	    				</div>
 	    			</div>
     			</div>
     		</div>
