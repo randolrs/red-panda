@@ -163,9 +163,18 @@ a {
 
 .home {
   height: calc(100vh);
-  background: #1565C0;
-  background: -webkit-linear-gradient(to right, #0D47A1, #00796B);
-  background: linear-gradient(to right, #0D47A1, #00796B); }
+  background: url(https://www.toptal.com/designers/subtlepatterns/patterns/knitted-netting.png);
+  position: relative; }
+  .home__overlay {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background: #1565C0;
+    background: -webkit-linear-gradient(to right, #0D47A1, #00796B);
+    background: linear-gradient(to right, #0D47A1, #00796B);
+    opacity: 0.8; }
   .home__content {
     position: relative;
     top: 45%;
@@ -175,19 +184,27 @@ a {
     padding: 20px 50px;
     color: #fff; }
     .home__content__hero-container {
-      display: flex; }
+      display: flex;
+      margin-bottom: 30px; }
       .home__content__hero-container__image {
         width: 150px; }
       .home__content__hero-container__headline {
         flex: 1;
-        padding-left: 20px; }
+        padding-left: 20px;
+        text-align: justify; }
+    .home__content__cta-container a {
+      padding: 10px 30px;
+      background: #212121;
+      color: #fff;
+      margin: 10px;
+      display: inline-block;
+      border-radius: 3px; }
     .home__content__header {
       font-size: 48px;
       margin: 0px;
       color: #fff;
       text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
       font-weight: 700;
-      margin-bottom: 30px;
       letter-spacing: -1px; }
     .home__content__sub-header {
       font-size: 28px;
@@ -285,7 +302,7 @@ a {
   .navigation__left, .navigation__right {
     display: inline-block; }
   .navigation__left {
-    padding: 10px; }
+    padding-left: 15px; }
   .navigation__right {
     float: right; }
   .navigation__link {
@@ -295,8 +312,8 @@ a {
     text-decoration: none; }
     .navigation__link--button {
       line-height: 20px;
-      padding: 8px 20px;
-      margin: 12px;
+      padding: 8px;
+      margin: 12px 8px;
       display: inline-block;
       text-decoration: none;
       background: rgba(0, 0, 0, 0);

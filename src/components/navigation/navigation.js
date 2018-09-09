@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import _ from 'lodash';
 import { Link, NavLink } from "react-router-dom";
+import SocialLinksData from '../../data/social-links';
 
 class Navigation extends Component {
 	static propTypes = {
@@ -32,47 +33,61 @@ class Navigation extends Component {
 	};
 
 	render() {
+
+		let socialLinks = SocialLinksData.map((socialLink) => {
+			if(socialLink.inNav) {
+				return(
+					<NavLink
+						exact
+						to={socialLink.url}
+						className="navigation__link--button"
+						activeClassName="active"
+						key={socialLink.id}
+						target="_blank"
+					>
+						{socialLink.label}
+					</NavLink>
+				);
+			}
+		});
 		return(
 			<div className={"navigation " + (this.props.navIsClear ? 'clear' : 'white')}>
 				<div className="navigation__left">
-					<Link 
-						to="/" 
-						className="navigation__link--logo"
-					>
-						<img src="/logo.svg" alt="Shane Randolph" />
-						<span className="title">Shane Randolph</span>
-					</Link>
-				</div>
-				<div className="navigation__right">
 					<NavLink 
+						exact
 						to="/"
 						className="navigation__link--button"
 						activeClassName="active"
 					>
 						<span>Home</span>
 					</NavLink>
-					<NavLink 
-						to="/contact"
-						className="navigation__link--button"
-						activeClassName="active"
-					>
-						<span>Contact Me</span>
-					</NavLink>
-
-					<NavLink 
+					<NavLink
+						exact
 						to="/resume"
 						className="navigation__link--button"
 						activeClassName="active"
 					>
 						<span>Resumé/CV</span>
 					</NavLink>
-					<NavLink 
+					<NavLink
+						exact
 						to="/projects"
 						className="navigation__link--button"
 						activeClassName="active"
 					>
-						<span>Recent Projects</span>
+						<span>Projects</span>
 					</NavLink>
+					<NavLink
+						exact
+						to="/contact"
+						className="navigation__link--button"
+						activeClassName="active"
+					>
+						<span>Contact Me</span>
+					</NavLink>
+				</div>
+				<div className="navigation__right">
+					{socialLinks}
 				</div>
 			</div>
 		)

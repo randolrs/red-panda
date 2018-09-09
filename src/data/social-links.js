@@ -2,17 +2,20 @@ const SocialLinksData = [
   {
     label: "LinkedIn",
     url: 'https://www.linkedin.com/in/shane-randolph-b9509838/',
-    id: "linkedin"
+    id: "linkedin",
+    inNav: true
   },
   {
     label: "AngelList",
     url: 'https://angel.co/shane-randolph',
-    id: "angellist"
+    id: "angellist",
+    inNav: true
   },
   {
     label: "Tokenly",
     url: 'https://Tokenly.com',
-    id: "tokenly"
+    id: "tokenly",
+    inNav: false
   },
 ];
 
