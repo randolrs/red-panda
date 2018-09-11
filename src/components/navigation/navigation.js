@@ -4,6 +4,8 @@ import _ from 'lodash';
 import { Link, NavLink } from "react-router-dom";
 import SocialLinksData from '../../data/social-links';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 class Navigation extends Component {
 	static propTypes = {
     	makeNavWhite: PropTypes.func.isRequired,
@@ -33,25 +35,25 @@ class Navigation extends Component {
 	};
 
 	render() {
-
 		let socialLinks = SocialLinksData.map((socialLink) => {
 			if(socialLink.inNav) {
 				return(
 					<NavLink
 						exact
 						to={socialLink.url}
-						className="navigation__link--button"
+						className="navigation__link--button icon"
 						activeClassName="active"
 						key={socialLink.id}
 						target="_blank"
-					>
-						{socialLink.label}
+					>	
+						<span><i className={socialLink.faClass}></i></span>
 					</NavLink>
 				);
 			}
 		});
 		return(
 			<div className={"navigation " + (this.props.navIsClear ? 'clear' : 'white')}>
+				<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
 				<div className="navigation__left">
 					<NavLink 
 						exact

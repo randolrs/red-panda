@@ -76,7 +76,7 @@
     background: #1565C0;
     background: -webkit-linear-gradient(to right, #0D47A1, #00796B);
     background: linear-gradient(to right, #0D47A1, #00796B);
-    opacity: 0.8; }
+    opacity: 0.87; }
   .home__content {
     position: relative;
     top: 45%;
@@ -225,6 +225,16 @@
       transition: 0.2s;
       text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
       letter-spacing: -0.5px; }
+      .navigation__link--button.icon {
+        background: #fff;
+        color: #757575;
+        border-radius: 50%;
+        height: 36px;
+        width: 36px;
+        padding: 0px;
+        text-align: center;
+        line-height: 36px;
+        font-size: 20px; }
       .navigation__link--button.active {
         border-bottom: 3px solid #EF6C00; }
     .navigation__link--logo {

@@ -19,7 +19,13 @@ import Contact from './components/contact/contact'
 import Navigation from './components/navigation/navigation'
 import Footer from './components/footer/footer'
 
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faStroopwafel, faAngellist, faLinkedin } from '@fortawesome/free-solid-svg-icons'
+
 import './App.css';
+
+library.add(faStroopwafel)
 
 class App extends React.Component {
 
