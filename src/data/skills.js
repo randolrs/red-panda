@@ -45,7 +45,7 @@ const SkillsData = [
     name: "HTML/CSS",
     skillUrl: 'https://reactjs.org/',
     img_src: '/html-css-logo.jpg',
-    description: 'Lorem Ipsum',
+    description: 'I use CSS3 and HTML5 to create responsive interfaces that are intuitive and functional on any size screen.',
     id: 'ruby'
   },
   {

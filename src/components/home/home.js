@@ -8,13 +8,18 @@ import Headlines from './partials/headlines'
 class Home extends Component {    
   
   render() {
-    return (
+  //   return (
+  //     	<div>
+		// 	<Hero></Hero>
+		// 	<Headlines></Headlines>
+		// 	<About></About>
+		// 	<Current></Current>
+		// 	<Skills></Skills>
+		// </div>
+  //   );
+  return (
       	<div>
 			<Hero></Hero>
-			<Headlines></Headlines>
-			<About></About>
-			<Current></Current>
-			<Skills></Skills>
 		</div>
     );
   }
