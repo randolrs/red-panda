@@ -20,6 +20,9 @@ class Hero extends Component {
 						<span className="home__content__main-link">Angellsit</span>
 						<span className="home__content__main-link">Medium?</span>
 					</div>
+					<div>
+						<span className="home__content__main-cta">Contact Me</span>
+					</div>
 				</div>
 			</section>
 		);

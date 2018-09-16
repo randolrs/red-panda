@@ -47,7 +47,6 @@ class Navigation extends Component {
 					</NavLink>
 				</div>
 				<div className="navigation__right">
-					<span className="navigation__main-link">Contact Me</span>
 				</div>
 			</div>
 		)
