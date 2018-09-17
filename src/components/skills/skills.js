@@ -1,6 +1,6 @@
 import React, { Component} from 'react';
-import SkillsData from '../../../data/skills'
-import Skill from '../../skills/skill'
+import SkillsData from '../../data/skills'
+import Skill from './skill'
 
 class Skills extends Component {    
 	render() {
@@ -10,9 +10,9 @@ class Skills extends Component {
 			);
 		}); 
     	return (
-			<section className="home-section">
-				<div className="home-section__content centered">
-					<header className="home-section__content__header"><span>Skills</span></header>
+			<section>
+				<div className="centered">
+					<h2><span>Skills</span></h2>
 					<p className="home-section__content__header--secondary">
 						<span>I work primarily with component-based Javascript libraries as well as back-end languages for the purposes of creating REST APIs.</span>
 					</p>

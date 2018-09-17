@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { Link, NavLink } from "react-router-dom";
 
 class Hero extends Component {
 
@@ -16,7 +17,13 @@ class Hero extends Component {
 					</p>
 					<div className="centered">
 						<span className="home__content__main-link">Linkedin</span>
-						<span className="home__content__main-link">Resume</span>
+						<NavLink 
+							exact
+							to="/resume"
+						>
+							<span className="home__content__main-link">Resume</span>
+						</NavLink>
+						
 						<span className="home__content__main-link">Angellsit</span>
 						<span className="home__content__main-link">Medium?</span>
 					</div>

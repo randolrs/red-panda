@@ -11,33 +11,10 @@ class Projects extends Component {
 			);
 		});
     	return (
-			<div>
-				<div className="page-header centered">
-    				<div className="page-header__content centered">	
-	    				<h1><span>Recent Projects</span></h1>
-	    				<h2>Synopsis: I've been designing and developing front-ends for cutting-edge cryptocurrency/blockchain commerce projects.</h2>
-	    				<div>
-						</div>
-					</div>
-    			</div>
-    			<div className="content">
-					<section>
-						{projects}
-					</section>
-					<div>
-						<div className="content__read-more-cta centered">
-							<span>Interested in my resumé/work history?</span>
-							<br />
-							<Link 
-								to="/resume"
-								className="content__read-more-cta__button"
-							>
-								<span>Check out my resumé/CV</span>
-							</Link>
-						</div>
-					</div>
-				</div>
-			</div>
+    		<section>
+    			<h2 className="centered">Projects</h2>
+				{projects}
+			</section>
 		)
     }
 }

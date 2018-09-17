@@ -2,6 +2,8 @@ import React, { Component}  from 'react';
 import ResumeData from '../../data/resume';
 import ResumeEntry from './resume-entry';
 import { Link } from "react-router-dom";
+import Skills from '../skills/skills';
+import Projects from '../projects/projects'
 
 class Resume extends Component {    
 	render() {
@@ -60,6 +62,9 @@ class Resume extends Component {
 						<h2 className="centered">Education</h2>
 						{eduList}
 					</section>
+					
+					<Projects></Projects>
+					<Skills></Skills>
 
 					<div>
 						<div className="content__read-more-cta centered">
