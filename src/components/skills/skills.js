@@ -6,7 +6,10 @@ class Skills extends Component {
 	render() {
 		let skills = SkillsData.map((skillEntry) => {
 			return (
-				<Skill skill={skillEntry}></Skill>
+				<Skill
+					skill={skillEntry}
+					key={skillEntry.id}
+				></Skill>
 			);
 		}); 
     	return (
@@ -16,7 +19,7 @@ class Skills extends Component {
 					<p className="home-section__content__header--secondary">
 						<span>I work primarily with component-based Javascript libraries as well as back-end languages for the purposes of creating REST APIs.</span>
 					</p>
-					<div class="flex-container">
+					<div className="flex-container">
 						{skills}
 					</div>
 				</div>

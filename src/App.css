@@ -19,11 +19,19 @@
 
 .fade-enter {
   opacity: 0;
-  z-index: 1; }
+  z-index: 1;
+  transition: opacity 0s; }
 
 .fade-enter.fade-enter-active {
   opacity: 1;
   transition: opacity 250ms ease-in; }
+
+.fade-leave {
+  opacity: 1; }
+
+.fade-leave.fade-leave-active {
+  opacity: 0.01;
+  transition: opacity 0ms ease-in; }
 
 .switch-wrapper {
   position: relative; }
@@ -71,6 +79,19 @@ a {
     margin-bottom: 5px; }
   .card__description {
     color: #616161; }
+
+body::-webkit-scrollbar-track {
+  border-radius: 0px;
+  background-color: #fff; }
+
+body::-webkit-scrollbar {
+  width: 12px;
+  background-color: #fff;
+  border-radius: 2px; }
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background-color: #fc00ff; }
 
 .button {
   display: inline-block; }
@@ -122,7 +143,7 @@ a {
       margin-bottom: 20px;
       color: #212121; }
   .content__read-more-cta {
-    padding: 25px;
+    padding: 50px 25px;
     border-radius: 3px;
     background: #E1F5FE;
     border: 1px solid #81D4FA;
@@ -144,7 +165,8 @@ a {
   background: linear-gradient(to right, #00dbde, #fc00ff);
   color: #fff;
   position: relative;
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3); }
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 0px 0px 3px 3px; }
   .page-header__content {
     max-width: 800px;
     margin: 0 auto;

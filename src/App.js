@@ -7,10 +7,13 @@ import * as ActionCreators from './store/actions/actions';
 import { 
   BrowserRouter as Router,
   Route,
-  Switch
+  Switch,
+  withRouter
 } from "react-router-dom";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import { AnimatedSwitch } from 'react-router-transition';
+
+import Header from './components/header/header'
 
 import Home from './components/home/home'
 import Resume from './components/resume/resume'
@@ -18,6 +21,8 @@ import Projects from './components/projects/projects'
 import Contact from './components/contact/contact'
 import Navigation from './components/navigation/navigation'
 import Footer from './components/footer/footer'
+
+import Content from './components/content/content'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -44,31 +49,13 @@ class App extends React.Component {
         onUpdate={() => window.scrollTo(0, 0)}
       >
         <div className="App">
-        	<link
-        		rel="stylesheet"
-        		href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-        		integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-        		crossOrigin="anonymous" 
-        	/>
-			<Navigation
-				navIsClear={navIsClear}
-				makeNavClear={makeNavClear}
-				makeNavWhite={makeNavWhite}
-			></Navigation>
-			<div className="main-content">
-				<AnimatedSwitch
-					atEnter={{ opacity: 0 }}
-					atLeave={{ opacity: 0 }}
-					atActive={{ opacity: 1 }}
-					className="switch-wrapper"
-					location={window.location}
-				>
-					<Route exact path="/" component={Home} />
-					<Route path="/projects" component={Projects} />
-					<Route path="/resume" component={Resume} />
-					<Route path="/contact" component={Contact} />
-				</AnimatedSwitch>
-			</div>
+          <Header></Header>
+    			<Navigation
+    				navIsClear={navIsClear}
+    				makeNavClear={makeNavClear}
+    				makeNavWhite={makeNavWhite}
+    			></Navigation>
+    			<Content></Content>
         </div>
       </Router>
     )

@@ -63,7 +63,7 @@ class Hero extends Component {
 							href="mailto:r.shane.randolph@gmail.com"
 						>
 							<span className="home__content__main-cta">
-								<i class="fas fa-envelope"></i>
+								<i className="fas fa-envelope"></i>
 								<span>Contact Me</span>
 							</span>
 						</a>

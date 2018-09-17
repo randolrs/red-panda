@@ -38,10 +38,11 @@ class Resume extends Component {
 	    				<img src="/Shane.png" className="home__content__img"/>
 	    				<h1><span>My Resume</span></h1>
 	    				<h2><span>Synopsis: {resumeTLDR}</span></h2>
-	    				<div class="page-header__content__cta-container">
+	    				<div className="page-header__content__cta-container">
 		    				<a
 								href={resumeGoogleDocsLink}
 								target="_blank"
+								rel="noopener noreferrer"
 								className="content__main-cta"
 							>
 								<span>View/Download Google Docs Version (PDF)</span>
@@ -68,14 +69,16 @@ class Resume extends Component {
 
 					<div>
 						<div className="content__read-more-cta centered">
-							<span>Interested in some of the recent projects I've worked on?</span>
-							<br />
-							<Link 
-								to="/projects"
+							<span>Want a Google Docs/PDF version of this information?   worked on?</span>
+							<br /><br />
+							<a 
+								href={resumeGoogleDocsLink}
+								target="_blank"
+								rel="noopener noreferrer"
 								className="content__read-more-cta__button"
 							>
-								<span>Check out my recent projects</span>
-							</Link>
+								<span>Check out my resume on Google Docs</span>
+							</a>
 						</div>
 					</div>
 				</div>

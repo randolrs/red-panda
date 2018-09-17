@@ -41,3 +41,16 @@ a {
     margin-bottom: 5px; }
   .card__description {
     color: #616161; }
+
+body::-webkit-scrollbar-track {
+  border-radius: 0px;
+  background-color: #fff; }
+
+body::-webkit-scrollbar {
+  width: 12px;
+  background-color: #fff;
+  border-radius: 2px; }
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background-color: #fc00ff; }

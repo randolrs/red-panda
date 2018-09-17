@@ -32,7 +32,7 @@ const SkillsData = [
     skillUrl: 'https://reactjs.org/',
     img_src: '/es6-logo.jpeg',
     description: 'Lorem Ipsum',
-    id: 'nodejs'
+    id: 'javascript'
   },
   {
     name: "Ruby/ROR",
@@ -46,7 +46,7 @@ const SkillsData = [
     skillUrl: 'https://reactjs.org/',
     img_src: '/html-css-logo.jpg',
     description: 'I use CSS3 and HTML5 to create responsive interfaces that are intuitive and functional on any size screen.',
-    id: 'ruby'
+    id: 'htmlcss'
   },
   {
     name: "Test-driven Development",
