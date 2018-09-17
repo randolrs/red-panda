@@ -1,21 +1,13 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import _ from 'lodash';
-import { Link, NavLink } from "react-router-dom";
-import SocialLinksData from '../../data/social-links';
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { NavLink } from "react-router-dom";
 
 class Navigation extends Component {
 	static propTypes = {
     	makeNavWhite: PropTypes.func.isRequired,
     	makeNavClear: PropTypes.func.isRequired
   	};
-
-	constructor(props) {
-		super(props);
-	};
-
+  	
 	componentDidMount = () => {
 		window.addEventListener('scroll', this.handleScroll);
 	};

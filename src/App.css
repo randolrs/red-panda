@@ -161,8 +161,8 @@ body::-webkit-scrollbar-thumb {
   padding-top: 120px;
   padding-bottom: 90px;
   background: #fc00ff;
-  background: -webkit-linear-gradient(to right, #00dbde, #fc00ff);
-  background: linear-gradient(to right, #00dbde, #fc00ff);
+  background: -webkit-linear-gradient(to bottom, #00dbde, #fc00ff);
+  background: linear-gradient(to bottom, #00dbde, #fc00ff);
   color: #fff;
   position: relative;
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
@@ -195,8 +195,8 @@ body::-webkit-scrollbar-thumb {
     left: 0px;
     right: 0px;
     background: #fc00ff;
-    background: -webkit-linear-gradient(to right, #00dbde, #fc00ff);
-    background: linear-gradient(to right, #00dbde, #fc00ff);
+    background: -webkit-linear-gradient(to bottom, #00dbde, #fc00ff);
+    background: linear-gradient(to bottom, #00dbde, #fc00ff);
     opacity: 0.87; }
   .home__content {
     position: relative;

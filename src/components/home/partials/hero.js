@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 class Hero extends Component {
 
@@ -8,7 +8,11 @@ class Hero extends Component {
 			<section className="home">
 				<div className="home__overlay"></div>
 				<div className="home__content centered">
-					<img src="/Shane.png" className="home__content__img"/>
+					<img
+						src="/Shane.png"
+						className="home__content__img"
+						alt="Shane Randolph"
+					/>
 					<h1 className="home__content__header">Shane Randolph</h1>
 					<p className="home__content__header--secondary">
 						<span>Software Developer</span>&nbsp;•&nbsp; 

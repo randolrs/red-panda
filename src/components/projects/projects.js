@@ -1,7 +1,6 @@
 import React, { Component}  from 'react';
 import ProjectData from '../../data/projects';
 import Project from './project';
-import { Link } from "react-router-dom";
 
 class Projects extends Component {    
 	render() {

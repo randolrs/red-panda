@@ -1,23 +1,23 @@
 import React, { Component}  from 'react';
-import { Link } from "react-router-dom";
 
 class Skill extends Component {    
-	constructor(props) {
-		super(props);
-	};
 	render() {
 		let skill = this.props.skill;
+		let smallClass = null;
 		if(skill.name.length > 12) {
-			var smallClass = 'small';
+			smallClass = 'small';
 		} else {
-			var smallClass = '';
+			smallClass = '';
 		}
 		return (
     		<div className="skill-container centered">
     			<div className="skill-container__content">
 	    			<div className="front">
 	    				<div className="skill-container__content__img-container">
-	    					<img src={skill.img_src}></img>
+	    					<img
+	    						src={skill.img_src}
+	    						alt={skill.name}
+	    					></img>
 	    				</div>
 	    				<span className={"skill-container__content__title " + smallClass}>{skill.name}</span>
 	    			</div>

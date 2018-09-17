@@ -14,11 +14,6 @@ import Contact from '../contact/contact'
 import Projects from '../projects/projects'
 
 class Content extends Component {
-
-  constructor(props) {
-    super(props);
-  };
-
   render() {
     var currentLocation = this.props.location.pathname
     return (

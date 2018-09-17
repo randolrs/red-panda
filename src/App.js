@@ -5,32 +5,16 @@ import { connect } from 'react-redux';
 import * as ActionCreators from './store/actions/actions';
 
 import { 
-  BrowserRouter as Router,
-  Route,
-  Switch,
-  withRouter
+  BrowserRouter as Router
 } from "react-router-dom";
-import { TransitionGroup, CSSTransition } from "react-transition-group";
-import { AnimatedSwitch } from 'react-router-transition';
 
 import Header from './components/header/header'
-
-import Home from './components/home/home'
-import Resume from './components/resume/resume'
-import Projects from './components/projects/projects'
-import Contact from './components/contact/contact'
 import Navigation from './components/navigation/navigation'
 import Footer from './components/footer/footer'
 
 import Content from './components/content/content'
 
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faStroopwafel, faAngellist, faLinkedin } from '@fortawesome/free-solid-svg-icons'
-
 import './App.css';
-
-library.add(faStroopwafel)
 
 class App extends React.Component {
 

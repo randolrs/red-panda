@@ -35,7 +35,11 @@ class Resume extends Component {
     		<div>
     			<div className="page-header centered">
     				<div className="page-header__content centered">	
-	    				<img src="/Shane.png" className="home__content__img"/>
+	    				<img
+	    					src="/Shane.png"
+	    					alt="Shane Randolph Software Developer"
+	    					className="home__content__img"
+	    				/>
 	    				<h1><span>My Resume</span></h1>
 	    				<h2><span>Synopsis: {resumeTLDR}</span></h2>
 	    				<div className="page-header__content__cta-container">

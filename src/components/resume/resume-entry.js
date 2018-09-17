@@ -1,15 +1,15 @@
 import React, { Component}  from 'react';
 
 class ResumeEntry extends Component {    
-	constructor(props) {
-		super(props);
-	};
 	render() {
 		let resumeEntry = this.props.resumeEntry;
 		return (
 			<div className="card resume-entry">
 				<div className="resume-entry__image">
-					<img src={resumeEntry.img_src} />
+					<img
+						src={resumeEntry.img_src}
+						alt={resumeEntry.company}
+					/>
 					{resumeEntry.moreDetails &&
 						<div>
 							<span className="button__grey">More Details</span>
