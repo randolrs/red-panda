@@ -16,19 +16,57 @@ class Hero extends Component {
 						<span>Something something dark side</span>
 					</p>
 					<div className="centered">
-						<span className="home__content__main-link">Linkedin</span>
+						<a
+							href="https://www.linkedin.com/in/shane-randolph-b9509838/"
+							rel="noopener noreferrer"
+							target="_blank"
+						>
+							<span className="home__content__main-link">
+								<i className="fab fa-linkedin"></i>
+							</span>
+						</a>
+
+						<a
+							href="https://angel.co/shane-randolph"
+							rel="noopener noreferrer"
+							target="_blank"
+						>
+							<span className="home__content__main-link">
+								<i className="fab fa-angellist"></i>
+							</span>
+						</a>
+						<a 
+							href="https://medium.com/@shanerandolph"
+							rel="noopener noreferrer"
+							target="_blank"
+						>
+							<span className="home__content__main-link">
+								<i className="fab fa-medium"></i>
+							</span>
+						</a>
+					</div>
+					<div>
 						<NavLink 
 							exact
 							to="/resume"
 						>
-							<span className="home__content__main-link">Resume</span>
+							<span className="home__content__main-cta">
+								<span>See My Resume</span>
+								<i 
+									className="fas fa-arrow-right"
+								></i>
+							</span>
 						</NavLink>
-						
-						<span className="home__content__main-link">Angellsit</span>
-						<span className="home__content__main-link">Medium?</span>
 					</div>
 					<div>
-						<span className="home__content__main-cta">Contact Me</span>
+						<a 
+							href="mailto:r.shane.randolph@gmail.com"
+						>
+							<span className="home__content__main-cta">
+								<i class="fas fa-envelope"></i>
+								<span>Contact Me</span>
+							</span>
+						</a>
 					</div>
 				</div>
 			</section>

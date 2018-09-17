@@ -44,25 +44,31 @@ class App extends React.Component {
         onUpdate={() => window.scrollTo(0, 0)}
       >
         <div className="App">
-          <Navigation
-            navIsClear={navIsClear}
-            makeNavClear={makeNavClear}
-            makeNavWhite={makeNavWhite}
-          ></Navigation>
-          <div className="main-content">
-            <AnimatedSwitch
-              atEnter={{ opacity: 0 }}
-              atLeave={{ opacity: 0 }}
-              atActive={{ opacity: 1 }}
-              className="switch-wrapper"
-              location={window.location}
-            >
-              <Route exact path="/" component={Home} />
-              <Route path="/projects" component={Projects} />
-              <Route path="/resume" component={Resume} />
-              <Route path="/contact" component={Contact} />
-            </AnimatedSwitch>
-          </div>
+        	<link
+        		rel="stylesheet"
+        		href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        		integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        		crossOrigin="anonymous" 
+        	/>
+			<Navigation
+				navIsClear={navIsClear}
+				makeNavClear={makeNavClear}
+				makeNavWhite={makeNavWhite}
+			></Navigation>
+			<div className="main-content">
+				<AnimatedSwitch
+					atEnter={{ opacity: 0 }}
+					atLeave={{ opacity: 0 }}
+					atActive={{ opacity: 1 }}
+					className="switch-wrapper"
+					location={window.location}
+				>
+					<Route exact path="/" component={Home} />
+					<Route path="/projects" component={Projects} />
+					<Route path="/resume" component={Resume} />
+					<Route path="/contact" component={Contact} />
+				</AnimatedSwitch>
+			</div>
         </div>
       </Router>
     )

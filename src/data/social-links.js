@@ -20,6 +20,15 @@ const SocialLinksData = [
     inNav: false,
     faClass: 'fab fa-linkedin'
   },
+  {
+    label: "Medium",
+    url: 'https://medium.com/@shanerandolph',
+    id: "medium",
+    inNav: false,
+    faClass: 'fab fa-medium'
+  },
+
+
 ];
 
 export default SocialLinksData;

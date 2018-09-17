@@ -8,7 +8,7 @@ import Projects from '../projects/projects'
 class Resume extends Component {    
 	render() {
 		let workList = ResumeData.map((resumeEntry) => {
-			if(resumeEntry.type == 'work') {
+			if(resumeEntry.type === 'work') {
 				return(
 					<ResumeEntry resumeEntry={resumeEntry} key={resumeEntry.id}></ResumeEntry>
 				);
@@ -16,14 +16,14 @@ class Resume extends Component {
 		});
 
 		let eduList = ResumeData.map((resumeEntry) => {
-			if(resumeEntry.type == 'edu') {
+			if(resumeEntry.type === 'edu') {
 				return(
 					<ResumeEntry resumeEntry={resumeEntry} key={resumeEntry.id}></ResumeEntry>
 				);
 			};
 		});
 		let communityList = ResumeData.map((resumeEntry) => {
-			if(resumeEntry.type == 'community') {
+			if(resumeEntry.type === 'community') {
 				return(
 					<ResumeEntry resumeEntry={resumeEntry} key={resumeEntry.id}></ResumeEntry>
 				);
