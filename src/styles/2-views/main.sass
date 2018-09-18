@@ -11,7 +11,7 @@
 	padding: 50px
 	&__main-cta
 		padding: 10px 30px
-		border-radius: 30px
+		border-radius: 60px
 		background: #212121
 		border: 1px solid rgba(0,0,0,0.2)
 		display: inline-block
@@ -103,7 +103,7 @@
 			background: #212121
 			cursor: pointer
 			font-size: 18px
-			box-shadow: 0px 2px 10px rgba(0,0,0,0.2), inset 0px 1px 3px rgba(255,255,255,0.1)
+			box-shadow: 0px 2px 10px rgba(0,0,0,0.2), inset 0px 1px 2px rgba(255,255,255,0.05)
 			border: 1px solid rgba(0,0,0,0.2)
 			i
 				display: inline-block
@@ -477,6 +477,7 @@
 @media(max-width: 900px)
 	.page-header
 		margin-bottom: 20px
+		padding: 15px
 		padding-top: 90px
 		padding-bottom: 60px
 	.content 
@@ -484,6 +485,8 @@
 		section
 			h2
 				font-size: 24px
+		&__main-cta
+			font-size: 16px
 	.home__content
 		padding: 10px
 		&__header
@@ -493,6 +496,8 @@
 		&__img
 			width: 150px
 			height: 150px
+		&__main-cta
+			width: 66.6%
 	.page-header__content
 		h1
 			font-size: 36px
@@ -525,6 +530,15 @@
 		&__header
 			font-size: 40px
 @media(max-width: 600px)
+	.page-header
+		padding: 10px
+		padding-top: 90px
+		padding-bottom: 30px
+		&__content
+			h2
+				font-size: 18px
+	.content
+		padding: 10px
 	.navigation__link
 		&--button
 			font-size: 14px
@@ -547,9 +561,12 @@
 		&__header
 			font-size: 36px
 			&--secondary
-				font-size: 20px
+				font-size: 18px
 		&__main-cta
 			width: 100%
+		&__img
+			width: 100px
+			height: 100px
 	.home-section__content
 		padding: 100px 15px
 		&__header

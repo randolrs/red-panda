@@ -17,7 +17,7 @@ class Hero extends Component {
 					<p className="home__content__header--secondary">
 						<span>Software Developer</span>&nbsp;•&nbsp; 
 						<span>Crypto Enthusiast</span>&nbsp;•&nbsp; 
-						<span>Something something dark side</span>
+						<span>Econometrician</span>
 					</p>
 					<div className="centered">
 						<a
