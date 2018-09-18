@@ -8,10 +8,8 @@ import {
   BrowserRouter as Router
 } from "react-router-dom";
 
-import Header from './components/header/header'
 import Navigation from './components/navigation/navigation'
 import Footer from './components/footer/footer'
-
 import Content from './components/content/content'
 
 import './App.css';
@@ -33,7 +31,6 @@ class App extends React.Component {
         onUpdate={() => window.scrollTo(0, 0)}
       >
         <div className="App">
-          <Header></Header>
     			<Navigation
     				navIsClear={navIsClear}
     				makeNavClear={makeNavClear}
