@@ -496,7 +496,8 @@ body::-webkit-scrollbar-thumb {
   width: 200px;
   height: 200px;
   display: inline-block;
-  padding: 10px; }
+  padding: 10px;
+  max-width: 100%; }
   .skill-container__content {
     background: #fff;
     border-radius: 3px;
@@ -606,7 +607,8 @@ body::-webkit-scrollbar-thumb {
       width: 150px;
       height: 150px; }
     .home__content__main-cta {
-      width: 66.6%; }
+      width: 66.6%;
+      font-size: 18px; }
   .page-header__content h1 {
     font-size: 36px; }
   .page-header__content h2 {
@@ -666,7 +668,8 @@ body::-webkit-scrollbar-thumb {
     .home__content__header--secondary {
       font-size: 18px; }
   .home__content__main-cta {
-    width: 100%; }
+    width: 100%;
+    font-size: 16px; }
   .home__content__img {
     width: 100px;
     height: 100px; }
