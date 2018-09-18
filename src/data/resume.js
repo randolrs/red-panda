@@ -24,8 +24,10 @@ const ResumeData = [
     company_url_label: 'ArtYam.com (staging demo)',
     datesLabel: 'April 2014 - July 2016',
     datesLabelDescription: '(More than two years)',
-    summary: 'I created an eCommerce SAAS application and...',
+    summary: 'I created an eCommerce B2B SAAS application for fine arts galleries.',
     bulletPoints: [
+      'Design, develop, and component-based user interfaces using ReactJS and Ruby (ROR).',
+      'Integrate Stripe API and webhooks to enable recurring billing.'
     ],
     img_src: '/artyam-logo.png',
     id: 'artyam',

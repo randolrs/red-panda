@@ -11,7 +11,7 @@ class ResumeEntry extends Component {
 						alt={resumeEntry.company}
 					/>
 					{resumeEntry.moreDetails &&
-						<div>
+						<div style={{display: 'none'}}>
 							<span className="button__grey">More Details</span>
 						</div>
 					}

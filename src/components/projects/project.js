@@ -11,7 +11,7 @@ class Project extends Component {
 						alt={project.name}
 					/>
 					{project.moreDetails &&
-						<div>
+						<div style={{display: 'none'}}>
 							<span className="button__grey">More Details</span>
 						</div>
 					}

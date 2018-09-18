@@ -516,7 +516,12 @@
   .home-section__content {
     padding: 100px 25px; }
     .home-section__content__header {
-      font-size: 40px; } }
+      font-size: 40px; }
+  .resume-entry__data {
+    padding: 10px; }
+  .resume-entry__image {
+    padding: 10px;
+    width: 90px; } }
 
 @media (max-width: 600px) {
   .page-header {
@@ -559,4 +564,20 @@
     .home-section__content__header {
       font-size: 32px; }
       .home-section__content__header--secondary {
-        font-size: 18px; } }
+        font-size: 18px; }
+  .resume-entry {
+    display: block; }
+    .resume-entry__data {
+      padding: 5px; }
+    .resume-entry__image {
+      padding: 5px;
+      width: 60px; }
+  .card__header {
+    margin-bottom: 15px; } }
+
+@media (max-width: 450px) {
+  .card__header {
+    display: block;
+    margin-bottom: 15px; }
+  .card__upper-right {
+    text-align: left; } }
