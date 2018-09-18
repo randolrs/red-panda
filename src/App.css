@@ -209,7 +209,7 @@ body::-webkit-scrollbar-thumb {
     .home__content__main-cta {
       line-height: 20px;
       padding: 10px;
-      margin: 10px;
+      margin: 10px 0px;
       width: 50%;
       display: inline-block;
       max-width: 100%;
@@ -650,7 +650,13 @@ body::-webkit-scrollbar-thumb {
       font-size: 16px; }
   .home__content__header {
     font-size: 36px; }
+    .home__content__header--secondary {
+      font-size: 20px; }
+  .home__content__main-cta {
+    width: 100%; }
   .home-section__content {
     padding: 100px 15px; }
     .home-section__content__header {
-      font-size: 32px; } }
+      font-size: 32px; }
+      .home-section__content__header--secondary {
+        font-size: 18px; } }
