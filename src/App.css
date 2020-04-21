@@ -256,7 +256,7 @@ body::-webkit-scrollbar-thumb {
       font-weight: 700;
       letter-spacing: -1px; }
       .home__content__header--secondary {
-        font-size: 22px;
+        font-size: 28px;
         font-weight: 400;
         text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4); }
         .home__content__header--secondary span {
@@ -434,98 +434,6 @@ body::-webkit-scrollbar-thumb {
         letter-spacing: -0.5px; }
       .navigation__link--logo img {
         width: 40px; }
-
-.footer {
-  background: #212121;
-  color: #fff;
-  position: relative; }
-  .footer__content {
-    display: block;
-    max-width: 1000px;
-    width: 100%;
-    padding: 50px 30px;
-    line-height: 30px;
-    position: relative;
-    margin: 0 auto;
-    font-size: 18px; }
-    .footer__content__copyright {
-      margin-top: 50px; }
-    .footer__content__link {
-      display: inline-block;
-      padding: 10px; }
-  .footer img {
-    display: inline-block;
-    height: 30px;
-    vertical-align: middle; }
-
-.resume-entry {
-  display: flex; }
-  .resume-entry__image {
-    padding: 15px;
-    display: inline-block;
-    width: 170px;
-    text-align: center; }
-    .resume-entry__image img {
-      max-width: 100%;
-      border-radius: 2px; }
-  .resume-entry__data {
-    padding: 15px;
-    width: 100%;
-    text-align: left; }
-    .resume-entry__data__dates {
-      font-weight: 700;
-      color: #212121; }
-    .resume-entry__data__dates-description {
-      font-weight: 500;
-      color: #616161; }
-    .resume-entry__data__company {
-      font-weight: 700;
-      font-size: 20px;
-      color: #212121; }
-    .resume-entry__data__company-link {
-      font-weight: 500;
-      color: #0277BD; }
-  .resume-entry ul {
-    padding-left: 30px;
-    color: #616161; }
-    .resume-entry ul li {
-      margin-left: 20px;
-      margin-bottom: 3px; }
-
-.skill-container {
-  width: 200px;
-  height: 200px;
-  display: inline-block;
-  padding: 10px;
-  max-width: 100%; }
-  .skill-container__content {
-    background: #fff;
-    border-radius: 3px;
-    border: 1px solid #e0e0e0;
-    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
-    height: 100%;
-    width: 100%;
-    position: relative;
-    cursor: pointer; }
-    .skill-container__content__img-container {
-      height: 120px;
-      padding: 10px; }
-      .skill-container__content__img-container img {
-        max-height: 100%;
-        max-width: 100%;
-        border-radius: 2px; }
-    .skill-container__content__title {
-      font-weight: 700;
-      font-size: 18px;
-      color: #212121;
-      margin-top: 15px;
-      display: inline-block; }
-      .skill-container__content__title.small {
-        letter-spacing: -0.5px;
-        font-size: 16px; }
-
-.skill-container:hover .skill-container__content, .skill-container.hover .skill-container__content {
-  transform: rotateY(180deg); }
 
 .front, .back {
   width: 100%;

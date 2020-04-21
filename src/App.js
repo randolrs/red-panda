@@ -4,12 +4,11 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import * as ActionCreators from './store/actions/actions';
 
-import { 
+import {
   BrowserRouter as Router
 } from "react-router-dom";
 
 import Navigation from './components/navigation/navigation'
-import Footer from './components/footer/footer'
 import Content from './components/content/content'
 
 import './App.css';
@@ -27,7 +26,7 @@ class App extends React.Component {
     const makeNavWhite = bindActionCreators(ActionCreators.makeNavWhite, dispatch);
 
     return (
-      <Router 
+      <Router
         onUpdate={() => window.scrollTo(0, 0)}
       >
         <div className="App">

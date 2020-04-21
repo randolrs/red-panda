@@ -1,6 +1,6 @@
 import React, {Component}  from 'react';
 
-import { 
+import {
   BrowserRouter as Router,
   Route,
   Switch,
@@ -9,9 +9,6 @@ import {
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 import Home from '../home/home'
-import Resume from '../resume/resume'
-import Contact from '../contact/contact'
-import Projects from '../projects/projects'
 
 class Content extends Component {
   render() {
@@ -27,9 +24,6 @@ class Content extends Component {
           >
             <Switch>
               <Route exact path="/" component={Home} />
-    					<Route path="/projects" component={Projects} />
-    					<Route path="/resume" component={Resume} />
-    					<Route path="/contact" component={Contact} />
             </Switch>
           </CSSTransition>
         </TransitionGroup>

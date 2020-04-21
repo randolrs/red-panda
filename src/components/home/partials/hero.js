@@ -15,9 +15,7 @@ class Hero extends Component {
 					/>
 					<h1 className="home__content__header">Shane Randolph</h1>
 					<p className="home__content__header--secondary">
-						<span>Software Developer</span>&nbsp;•&nbsp; 
-						<span>Crypto Enthusiast</span>&nbsp;•&nbsp; 
-						<span>Econometrician</span>
+						<span>Software Engineer</span>
 					</p>
 					<div className="centered">
 						<a
@@ -39,36 +37,13 @@ class Hero extends Component {
 								<i className="fab fa-angellist"></i>
 							</span>
 						</a>
-						<a 
-							href="https://medium.com/@shanerandolph"
+						<a
+							href="mailto:r.shane.randolph@gmail.com"
 							rel="noopener noreferrer"
 							target="_blank"
 						>
 							<span className="home__content__main-link">
-								<i className="fab fa-medium"></i>
-							</span>
-						</a>
-					</div>
-					<div>
-						<NavLink 
-							exact
-							to="/resume"
-						>
-							<span className="home__content__main-cta">
-								<span>See My Resume</span>
-								<i 
-									className="fas fa-arrow-right"
-								></i>
-							</span>
-						</NavLink>
-					</div>
-					<div>
-						<a 
-							href="mailto:r.shane.randolph@gmail.com"
-						>
-							<span className="home__content__main-cta">
-								<i className="fas fa-envelope"></i>
-								<span>Contact Me</span>
+								<i className="fas fa-envelope" style={ {color: 'red'} }></i>
 							</span>
 						</a>
 					</div>
